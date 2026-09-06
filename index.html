@@ -56,7 +56,7 @@ em{font-style:normal; font-weight:500; color:var(--gold)}
 
 #bar{position:fixed; top:0; left:0; height:2px; width:0%; z-index:60;
   background:linear-gradient(90deg,#A8843C,#F6E3B0)}
-nav{position:sticky; top:0; z-index:50; background:rgba(8,7,6,.92);
+nav{position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(8,7,6,.92);
   backdrop-filter:blur(10px); border-bottom:1px solid var(--hair2)}
 nav .in{max-width:1180px; margin:0 auto; padding:12px 24px; display:flex; align-items:center; gap:8px; flex-wrap:wrap}
 nav .brand{font-family:var(--lat); font-size:17px; font-weight:600; letter-spacing:.1em;
@@ -311,8 +311,8 @@ mark.f{background:rgba(227,160,132,.19); box-shadow:inset 0 0 0 1px rgba(227,160
 #langBar button[aria-current="true"]{color:#120E08; font-weight:600; border-color:transparent;
   background:linear-gradient(160deg,#EED9A6,#C79E4C)}
 #langBar .fl{font-size:23px; line-height:1}
-nav .in,nav a,nav #keyBtn,#langBar,#langBar button,#langBar .fl{transition:
-  padding .18s ease, font-size .18s ease, margin .18s ease}
+#navpad{width:100%}
+section[id],header[id],div[id^="c"]{scroll-margin-top:80px}
 nav.mini .in{padding:6px 24px; gap:6px}
 nav.mini a,nav.mini #keyBtn{padding:5px 12px; font-size:13.5px}
 nav.mini a .trx,nav.mini #keyBtn .trx{display:none}
@@ -418,6 +418,7 @@ a{color:var(--gold)}
     </div>
   </div>
 </nav>
+<div id="navpad" aria-hidden="true"></div>
 
 <div class="wrap">
 
@@ -1098,12 +1099,33 @@ a{color:var(--gold)}
     if(bar){ var bs=bar.querySelectorAll('button');
       for(i=0;i<bs.length;i++) bs[i].setAttribute('aria-current', String(bs[i].getAttribute('data-lang')===l)); }
     keyLabel();
+    if(typeof fitPad==='function') fitPad();
     try{ localStorage.setItem('bzk_lang', l); }catch(e){}
   }
 
   var navEl=document.querySelector('nav');
-  function shrink(){ if(navEl) navEl.classList.toggle('mini', window.scrollY>90); }
-  window.addEventListener('scroll',shrink,{passive:true}); shrink();
+  var navPad=document.getElementById('navpad');
+  var mini=false, ticking=false;
+
+  function fitPad(){
+    if(!navEl||!navPad) return;
+    var was=navEl.classList.contains('mini');
+    if(was) navEl.classList.remove('mini');
+    navPad.style.height=navEl.getBoundingClientRect().height+'px';
+    if(was) navEl.classList.add('mini');
+  }
+  function shrink(){
+    ticking=false;
+    if(!navEl) return;
+    var y=window.scrollY||window.pageYOffset||0;
+    if(!mini && y>170){ mini=true; navEl.classList.add('mini'); }
+    else if(mini && y<80){ mini=false; navEl.classList.remove('mini'); }
+  }
+  window.addEventListener('scroll',function(){
+    if(!ticking){ ticking=true; requestAnimationFrame(shrink); }
+  },{passive:true});
+  window.addEventListener('resize',function(){ fitPad(); },{passive:true});
+  fitPad(); shrink();
 
   if(bar){ bar.addEventListener('click',function(e){
       var b=e.target.closest('button[data-lang]'); if(!b) return;
