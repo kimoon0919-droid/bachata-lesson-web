@@ -300,27 +300,58 @@ mark.f{background:rgba(227,160,132,.19); box-shadow:inset 0 0 0 1px rgba(227,160
   border:1px solid var(--hair2); border-radius:999px; padding:7px 15px; white-space:nowrap;
   font-family:var(--sans); font-weight:400}
 #keyBtn:hover{color:var(--gold); border-color:var(--hair)}
-#langWrap{position:relative; margin-left:auto}
-#langBtn{display:flex; align-items:center; gap:7px; font-size:13px; color:var(--gold);
-  background:var(--bg2); cursor:pointer; border:1px solid var(--hair); border-radius:999px;
-  padding:6px 13px 6px 12px; white-space:nowrap; font-family:var(--sans); font-weight:500}
-#langBtn:hover,#langBtn[aria-expanded="true"]{color:#120E08; border-color:transparent;
+#langBar{display:flex; align-items:center; justify-content:flex-end; gap:4px;
+  width:100%; box-sizing:border-box; flex:0 0 100%; flex-wrap:wrap; margin:2px 0 0;
+  padding:7px 0 0; border-top:1px solid var(--hair2)}
+#langBar button{display:flex; align-items:center; gap:8px; font-family:var(--sans);
+  font-size:13px; line-height:1; color:var(--ink3); background:var(--bg2);
+  border:1px solid var(--hair2); border-radius:999px; padding:6px 14px 6px 10px;
+  cursor:pointer; white-space:nowrap}
+#langBar button:hover{color:var(--gold); border-color:var(--hair)}
+#langBar button[aria-current="true"]{color:#120E08; font-weight:600; border-color:transparent;
   background:linear-gradient(160deg,#EED9A6,#C79E4C)}
-#langBtn .cv{font-size:10px; line-height:1; opacity:.75; transition:transform .18s}
-#langBtn svg{flex:none}
-#langBtn[aria-expanded="true"] .cv{transform:rotate(180deg)}
-#langMenu{position:absolute; top:calc(100% + 8px); right:0; z-index:60; min-width:172px;
-  background:#0F0D0B; border:1px solid var(--hair); border-radius:12px; padding:5px;
-  box-shadow:0 18px 40px rgba(0,0,0,.6)}
-#langMenu button{display:flex; align-items:center; gap:10px; width:100%; text-align:left;
-  font-family:var(--sans); font-size:14px; line-height:1.3; color:var(--ink2);
-  background:transparent; border:0; border-radius:8px; padding:9px 11px; cursor:pointer;
-  white-space:nowrap}
-#langMenu button:hover{background:rgba(215,177,95,.10); color:var(--ink)}
-#langMenu button .fl{font-size:15px; line-height:1; width:20px; text-align:center}
-#langMenu button .lchk{margin-left:auto; color:var(--gold); opacity:0; font-size:12px; line-height:1}
-#langMenu button[aria-current="true"]{color:var(--gold); background:rgba(215,177,95,.07)}
-#langMenu button[aria-current="true"] .lchk{opacity:1}
+#langBar .fl{font-size:23px; line-height:1}
+@media(max-width:720px){#langBar{justify-content:center}
+  #langBar button{font-size:12px; padding:5px 11px 5px 8px; gap:6px}
+  #langBar .fl{font-size:20px}}
+#langBar button:not([aria-current="true"]) .fl{opacity:.72}
+#langBar button:hover .fl{opacity:1}
+
+/* ---------- 한국어 아래에 붙는 번역문 ---------- */
+.trx{display:block; margin-top:.42em; font-family:var(--sans); font-weight:300;
+  font-size:.9em; line-height:1.62; color:#9AA6B4; letter-spacing:0}
+.trx mark{background:rgba(154,166,180,.16); color:#CFD8E2;
+  box-shadow:inset 0 0 0 1px rgba(154,166,180,.28)}
+.trx mark.f{background:rgba(198,160,150,.16); color:#E2CFC8;
+  box-shadow:inset 0 0 0 1px rgba(198,160,150,.30)}
+.trx strong,.trx b{color:#C3CEDA; font-weight:500}
+.trx em,.trx i{color:#9AA6B4}
+h1 .trx,h2 .trx,h3 .trx,h4 .trx{font-size:.52em; line-height:1.4; color:#8C99A8;
+  font-weight:400; margin-top:.7em; letter-spacing:0; text-transform:none}
+blockquote p .trx{font-size:.88em; color:#909CAB}
+cite .trx,.tag .trx,.ct .trx,.cred .trx,.medal .trx,.who .trx,nav a .trx,#keyBtn .trx,
+.dianum .trx,.eyebrow .trx{font-size:.85em; margin-top:.3em; opacity:.9}
+.who{flex-wrap:wrap}
+.who .trx{color:#8C99A8; flex:0 0 100%; margin-top:.45em}
+blockquote cite{flex-wrap:wrap}
+blockquote cite .trx{flex:0 0 100%; margin-top:.45em; font-family:var(--mono); font-size:.9em}
+.who .trx b,blockquote cite .trx b{font-family:var(--sans); font-size:1em; font-weight:500;
+  letter-spacing:0; color:#C3CEDA; margin-right:8px}
+.who .trx i,blockquote cite .trx i{font-style:normal; opacity:.85}
+nav a .trx,#keyBtn .trx{font-size:11px; color:#8C99A8; margin-top:.25em}
+nav a.on .trx,#keyBtn[aria-pressed="true"] .trx{color:rgba(18,14,8,.62)}
+th .trx,td .trx{font-size:.86em; margin-top:.3em}
+.bx + span .trx{font-size:.88em}
+footer .fine .trx{font-size:.9em; color:#7B8794}
+body.key .body .trx,body.key .cell .trx,body.key .tbox .trx,body.key blockquote p .trx,
+body.key figcaption .trx,body.key .callout .trx,body.key td .trx{color:#4C525B}
+body.key .body .trx strong,body.key .body .trx b,body.key blockquote p .trx strong{color:#5A616B}
+
+html[lang="ja"]{--sans:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif}
+html[lang="ja"] .trx{font-family:"Noto Sans JP","Hiragino Sans",sans-serif; line-break:strict}
+html[lang="en"] .trx,html[lang="es"] .trx,html[lang="pl"] .trx{word-break:normal;
+  overflow-wrap:break-word}
 html[lang="ja"]{--sans:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
   --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif}
 html[lang="ja"] body,html[lang="ja"] .body p,html[lang="ja"] .body li{word-break:normal;
@@ -359,18 +390,12 @@ a{color:var(--gold)}
     <a href="#c2" data-en="Class 2" data-es="Clase 2" data-pl="Zajęcia 2" data-ja="2限目">2교시</a>
     <a href="#ref" data-en="Glossary · Checklist" data-es="Glosario · Checklist" data-pl="Słowniczek · Checklista" data-ja="用語 · チェック表">용어 · 연습표</a>
     <button id="keyBtn" aria-pressed="false">핵심만 보기</button>
-    <div id="langWrap">
-      <button id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="언어 선택 / Language">
-        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="4" ry="9.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.2 9h17.6M3.2 15h17.6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-        <span id="langNow">한국어</span><span class="cv">▾</span>
-      </button>
-      <div id="langMenu" hidden>
-        <button type="button" data-lang="ko"><span class="fl">🇰🇷</span>한국어<span class="lchk">✓</span></button>
-        <button type="button" data-lang="en"><span class="fl">🇬🇧</span>English<span class="lchk">✓</span></button>
-        <button type="button" data-lang="es"><span class="fl">🇪🇸</span>Español<span class="lchk">✓</span></button>
-        <button type="button" data-lang="pl"><span class="fl">🇵🇱</span>Polski<span class="lchk">✓</span></button>
-        <button type="button" data-lang="ja"><span class="fl">🇯🇵</span>日本語<span class="lchk">✓</span></button>
-      </div>
+    <div id="langBar" role="group" aria-label="언어 / Language">
+      <button type="button" data-lang="ko"><span class="fl">🇰🇷</span><span class="ln">한국어</span></button>
+      <button type="button" data-lang="en"><span class="fl">🇬🇧</span><span class="ln">English</span></button>
+      <button type="button" data-lang="es"><span class="fl">🇪🇸</span><span class="ln">Español</span></button>
+      <button type="button" data-lang="pl"><span class="fl">🇵🇱</span><span class="ln">Polski</span></button>
+      <button type="button" data-lang="ja"><span class="fl">🇯🇵</span><span class="ln">日本語</span></button>
     </div>
   </div>
 </nav>
@@ -525,7 +550,7 @@ a{color:var(--gold)}
         <figure class="dia">
 <p class="dianum" data-en="Figure 02 · from the class footage" data-es="Figura 02 · del vídeo de la clase" data-pl="Rysunek 02 · z nagrania zajęć" data-ja="図解 02 · 実際のレッスン映像より">도해 02 · 실제 수업 영상</p>
 <h4 class="diatitle" data-en="Apart, and pulling toward each other" data-es="Al alejarse, tirando el uno del otro" data-pl="Oddaleni, ciągnący ku sobie" data-ja="離れながら互いに引き合う">멀어지면 서로 당긴다</h4>
-<div class="shot"><img src="a03ba2d8220.jpg" alt="두 사람이 멀어지며 서로를 당기는 순간" data-en-alt="The moment the two move apart and pull toward each other" data-es-alt="El momento en que los dos se alejan y tiran el uno del otro" data-pl-alt="Moment, w którym oboje oddalają się i ciągną ku sobie" data-ja-alt="二人が離れながら互いを引き合う瞬間"><svg class="ann" viewBox="0 0 1000 1277" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="ap" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E7C878"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F0B79B"/></marker></defs><path d="M430,165 L120,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><path d="M570,165 L880,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><text x="500" y="120" text-anchor="middle" font-family="IBM Plex Sans KR, sans-serif" font-size="40" font-weight="700" fill="#E7C878" stroke="rgba(6,5,4,.85)" stroke-width="7" paint-order="stroke" data-en="Pulling toward each other" data-es="Tirando el uno del otro" data-pl="Ciągną ku sobie" data-ja="互いに引き合う">서로 당긴다</text></svg><p class="barlabel" data-en="They are pulling with &lt;b&gt;the body leaning back&lt;/b&gt;, not with the arm. If only one does it, the other falls forward." data-es="Están tirando con &lt;b&gt;el cuerpo inclinándose hacia atrás&lt;/b&gt;, no con el brazo. Si solo lo hace uno, el otro se cae hacia delante." data-pl="Ciągną &lt;b&gt;ciałem odchylonym do tyłu&lt;/b&gt;, nie ramieniem. Jeśli robi to tylko jedno, drugie pada do przodu." data-ja="腕ではなく&lt;b&gt;体が後ろへ傾きながら&lt;/b&gt;引き合っています。片方だけがやると、相手が前へ倒れます。">팔이 아니라 <b>몸이 뒤로 기울며</b> 서로를 당기고 있습니다. 한쪽만 하면 상대가 앞으로 넘어집니다.</p></div>
+<div class="shot"><img src="a03ba2d8220.jpg" alt="두 사람이 멀어지며 서로를 당기는 순간" data-en-alt="The moment the two move apart and pull toward each other" data-es-alt="El momento en que los dos se alejan y tiran el uno del otro" data-pl-alt="Moment, w którym oboje oddalają się i ciągną ku sobie" data-ja-alt="二人が離れながら互いを引き合う瞬間"><svg class="ann" viewBox="0 0 1000 1277" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="ap" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E7C878"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F0B79B"/></marker></defs><path d="M430,165 L120,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><path d="M570,165 L880,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><text x="500" y="120" text-anchor="middle" font-family="IBM Plex Sans KR, sans-serif" font-size="40" font-weight="700" fill="#E7C878" stroke="rgba(6,5,4,.85)" stroke-width="7" paint-order="stroke" data-svg="1" data-en="Pulling toward each other" data-es="Tirando el uno del otro" data-pl="Ciągną ku sobie" data-ja="互いに引き合う">서로 당긴다</text></svg><p class="barlabel" data-en="They are pulling with &lt;b&gt;the body leaning back&lt;/b&gt;, not with the arm. If only one does it, the other falls forward." data-es="Están tirando con &lt;b&gt;el cuerpo inclinándose hacia atrás&lt;/b&gt;, no con el brazo. Si solo lo hace uno, el otro se cae hacia delante." data-pl="Ciągną &lt;b&gt;ciałem odchylonym do tyłu&lt;/b&gt;, nie ramieniem. Jeśli robi to tylko jedno, drugie pada do przodu." data-ja="腕ではなく&lt;b&gt;体が後ろへ傾きながら&lt;/b&gt;引き合っています。片方だけがやると、相手が前へ倒れます。">팔이 아니라 <b>몸이 뒤로 기울며</b> 서로를 당기고 있습니다. 한쪽만 하면 상대가 앞으로 넘어집니다.</p></div>
 <figcaption data-en="The moment the distance opens. This spring is what lets the lead travel through distance rather than through the hand." data-es="El momento en que se abre la distancia. Este resorte es lo que permite que el lead viaje por la distancia y no por la mano." data-pl="Moment, w którym otwiera się dystans. Ta sprężystość sprawia, że prowadzenie idzie przez dystans, a nie przez rękę." data-ja="二人の間隔が開く瞬間です。この弾力があってこそ、リードが手ではなく距離で伝わります。">두 사람 사이가 벌어지는 순간입니다. 이 탄력이 있어야 리드가 손이 아니라 거리로 전해집니다.</figcaption>
 </figure>
       </div>
@@ -998,18 +1023,23 @@ a{color:var(--gold)}
   var LANG='ko';
   var LANGS=['ko','en','es','pl','ja'];
   var T={
-    ko:{name:'한국어', key:['핵심만 보기','전체 보기'], title:'바차주크코리아'},
-    en:{name:'English', key:['Key points only','Show all'], title:'BachazoukKorea'},
-    es:{name:'Español', key:['Solo lo esencial','Ver todo'], title:'BachazoukKorea'},
-    pl:{name:'Polski', key:['Tylko najważniejsze','Pokaż wszystko'], title:'BachazoukKorea'},
-    ja:{name:'日本語', key:['要点だけ','全文を見る'], title:'バチャズークコリア'}
+    ko:{key:['핵심만 보기','전체 보기']},
+    en:{key:['Key points only','Show all']},
+    es:{key:['Solo lo esencial','Ver todo']},
+    pl:{key:['Tylko najważniejsze','Pokaż wszystko']},
+    ja:{key:['要点だけ','全文を見る']}
   };
 
   var kb=document.getElementById('keyBtn');
-  var lb=document.getElementById('langBtn');
-  var lm=document.getElementById('langMenu');
-  var ln=document.getElementById('langNow');
-  function keyLabel(){ if(kb) kb.textContent=T[LANG].key[document.body.classList.contains('key')?1:0]; }
+  var bar=document.getElementById('langBar');
+
+  function keyLabel(){
+    if(!kb) return;
+    var on=document.body.classList.contains('key');
+    var ko=T.ko.key[on?1:0];
+    kb.innerHTML = (LANG==='ko') ? ko
+      : ko + '<span class="trx" lang="'+LANG+'">' + T[LANG].key[on?1:0] + '</span>';
+  }
   if(kb){ kb.addEventListener('click',function(){
     var on=document.body.classList.toggle('key');
     kb.setAttribute('aria-pressed',String(on));
@@ -1019,44 +1049,47 @@ a{color:var(--gold)}
   function setLang(l){
     if(LANGS.indexOf(l)<0) l='ko';
     LANG=l;
-    var els=document.querySelectorAll('[data-en]'), i, el, v;
+    var els=document.querySelectorAll('[data-en]'), i, el, ko, v;
     for(i=0;i<els.length;i++){
       el=els[i];
       if(el.getAttribute('data-ko')===null) el.setAttribute('data-ko', el.innerHTML);
+      ko=el.getAttribute('data-ko');
       v=el.getAttribute('data-'+l);
-      if(v!==null) el.innerHTML=v;
+      if(el.getAttribute('data-svg')!==null){
+        if(l==='ko'||v===null){ el.setAttribute('y','120'); el.innerHTML=ko; }
+        else{ el.setAttribute('y','96');
+          el.innerHTML='<tspan x="500">'+ko+'</tspan><tspan x="500" dy="44" font-size="29" fill="#9AA6B4">'+v+'</tspan>'; }
+      }else if(l==='ko'||v===null){
+        el.innerHTML=ko;
+      }else{
+        el.innerHTML=ko+'<span class="trx" lang="'+l+'">'+v+'</span>';
+      }
     }
     var im=document.querySelectorAll('[data-en-alt]');
     for(i=0;i<im.length;i++){
       el=im[i];
       if(el.getAttribute('data-ko-alt')===null) el.setAttribute('data-ko-alt', el.getAttribute('alt')||'');
+      ko=el.getAttribute('data-ko-alt');
       v=el.getAttribute('data-'+l+'-alt');
-      if(v!==null) el.setAttribute('alt', v);
+      el.setAttribute('alt', (l==='ko'||v===null) ? ko : ko+' / '+v);
     }
     document.documentElement.lang=l;
-    document.title=T[l].title;
-    if(ln) ln.textContent=T[l].name;
-    if(lm){ var bs=lm.querySelectorAll('button');
+    if(bar){ var bs=bar.querySelectorAll('button');
       for(i=0;i<bs.length;i++) bs[i].setAttribute('aria-current', String(bs[i].getAttribute('data-lang')===l)); }
     keyLabel();
     try{ localStorage.setItem('bzk_lang', l); }catch(e){}
   }
 
-  function menu(open){ if(!lm||!lb) return;
-    lm.hidden=!open; lb.setAttribute('aria-expanded',String(open)); }
-  if(lb){ lb.addEventListener('click',function(e){ e.stopPropagation(); menu(lm.hidden); }); }
-  if(lm){ lm.addEventListener('click',function(e){
+  if(bar){ bar.addEventListener('click',function(e){
       var b=e.target.closest('button[data-lang]'); if(!b) return;
-      setLang(b.getAttribute('data-lang')); menu(false);
+      setLang(b.getAttribute('data-lang'));
     }); }
-  document.addEventListener('click',function(){ menu(false); });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape') menu(false); });
 
-  var saved='ko';
+  var saved='';
   try{ saved=localStorage.getItem('bzk_lang')||''; }catch(e){}
   if(!saved){
     var nv=(navigator.language||'').slice(0,2).toLowerCase();
-    if(LANGS.indexOf(nv)>=0) saved=nv;
+    if(LANGS.indexOf(nv)>=0 && nv!=='ko') saved=nv;
   }
   setLang(saved||'ko');
 
