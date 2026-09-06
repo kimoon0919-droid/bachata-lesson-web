@@ -300,6 +300,13 @@ mark.f{background:rgba(227,160,132,.19); box-shadow:inset 0 0 0 1px rgba(227,160
   border:1px solid var(--hair2); border-radius:999px; padding:7px 15px; white-space:nowrap;
   font-family:var(--sans); font-weight:400}
 #keyBtn:hover{color:var(--gold); border-color:var(--hair)}
+#langBtn{font-size:12px; letter-spacing:.14em; color:var(--gold-dim); background:transparent;
+  cursor:pointer; border:1px solid var(--hair); border-radius:999px; padding:7px 14px;
+  white-space:nowrap; font-family:var(--lat); font-weight:600; margin-left:auto}
+#langBtn:hover{color:#120E08; border-color:transparent;
+  background:linear-gradient(160deg,#EED9A6,#C79E4C)}
+html[lang="en"] .ko-only{display:none}
+html[lang="en"] body{word-break:normal}
 #keyBtn[aria-pressed="true"]{color:#120E08; font-weight:500; border-color:transparent;
   background:linear-gradient(160deg,#EED9A6,#C79E4C)}
 body.key .body p, body.key .body li, body.key .cell p, body.key .tbox p,
@@ -327,12 +334,13 @@ a{color:var(--gold)}
 <nav>
   <div class="in">
     <span class="brand">Soo &amp; Ruji</span>
-    <a href="#course">과정</a>
-    <a href="#core">핵심 원리</a>
-    <a href="#c1">1교시</a>
-    <a href="#c2">2교시</a>
-    <a href="#ref">용어 · 연습표</a>
+    <a href="#course" data-en="Course">과정</a>
+    <a href="#core" data-en="Core ideas">핵심 원리</a>
+    <a href="#c1" data-en="Class 1">1교시</a>
+    <a href="#c2" data-en="Class 2">2교시</a>
+    <a href="#ref" data-en="Glossary · Checklist">용어 · 연습표</a>
     <button id="keyBtn" aria-pressed="false">핵심만 보기</button>
+    <button id="langBtn" type="button" lang="en">ENGLISH</button>
   </div>
 </nav>
 
@@ -343,114 +351,114 @@ a{color:var(--gold)}
   <p class="eyebrow gold">2026 . 08 . 30</p>
   <p class="orn" style="margin-top:14px"><span>◆</span></p>
 
-  <div class="duo"><img src="acfd00475ac.jpg" alt="경수쌤과 류지쌤 — Bachata All-in-One Training 강사진"></div>
+  <div class="duo"><img src="acfd00475ac.jpg" alt="경수쌤과 류지쌤 — Bachata All-in-One Training 강사진" data-en-alt="Soo and Ruji — Bachata All-in-One Training instructors"></div>
 
-  <h1 class="gold">바차주크코리아</h1>
+  <h1 class="gold" data-en="BachazoukKorea">바차주크코리아</h1>
   <p class="sub">Head Movement &amp; Partner Connection</p>
-  <p class="lede">2026년 8월 30일, <strong>경수쌤과 류지쌤</strong>의 <strong>Bachata All-in-One Training</strong> 첫 주차 이야기입니다. 두 시간 연강을 현장 녹음에서 그대로 옮겼습니다. 1교시에서 <em>커넥션의 원리</em>를 하나씩 뜯어보고, 2교시에서 그것들을 <em>로테서리 콤비네이션</em>으로 엮습니다.</p>
+  <p class="lede" data-en="August 30, 2026 — week one of &lt;strong&gt;Soo &amp;amp; Ruji&lt;/strong&gt;&#x27;s &lt;strong&gt;Bachata All-in-One Training&lt;/strong&gt;. Two straight hours, transcribed from the room recording. Class 1 takes the &lt;em&gt;principles of connection&lt;/em&gt; apart one by one; class 2 threads them into a &lt;em&gt;rotisserie combination&lt;/em&gt;.">2026년 8월 30일, <strong>경수쌤과 류지쌤</strong>의 <strong>Bachata All-in-One Training</strong> 첫 주차 이야기입니다. 두 시간 연강을 현장 녹음에서 그대로 옮겼습니다. 1교시에서 <em>커넥션의 원리</em>를 하나씩 뜯어보고, 2교시에서 그것들을 <em>로테서리 콤비네이션</em>으로 엮습니다.</p>
 
   <div class="creds">
-    <span class="cred">🥇 <b>2023 KOREA BACHATA CHAMP</b> · 경수</span>
-    <span class="cred">🥇 <b>2025 KBL J&amp;J KING OF KINGS</b> · 류지</span>
-    <span class="cred">유럽 JnJ 심사위원 · 전세계 60여 개 도시 초청</span>
-    <span class="cred">한국 최초 바차주크 아카데미</span>
+    <span class="cred" data-en="🥇 &lt;b&gt;2023 KOREA BACHATA CHAMP&lt;/b&gt; · Soo">🥇 <b>2023 KOREA BACHATA CHAMP</b> · 경수</span>
+    <span class="cred" data-en="🥇 &lt;b&gt;2025 KBL J&amp;amp;J KING OF KINGS&lt;/b&gt; · Ruji">🥇 <b>2025 KBL J&amp;J KING OF KINGS</b> · 류지</span>
+    <span class="cred" data-en="European J&amp;amp;J pro judge · invited to 60+ cities worldwide">유럽 JnJ 심사위원 · 전세계 60여 개 도시 초청</span>
+    <span class="cred" data-en="Korea&#x27;s first Bachazouk academy">한국 최초 바차주크 아카데미</span>
   </div>
 
   <dl class="facts">
-    <div class="fact"><dt>1교시</dt><dd class="gold">52:41</dd></div>
-    <div class="fact"><dt>2교시</dt><dd class="gold">41:56</dd></div>
-    <div class="fact"><dt>총 강의</dt><dd class="gold">94:37</dd></div>
-    <div class="fact"><dt>주차</dt><dd class="gold">1 / 4</dd></div>
+    <div class="fact"><dt data-en="Class 1">1교시</dt><dd class="gold">52:41</dd></div>
+    <div class="fact"><dt data-en="Class 2">2교시</dt><dd class="gold">41:56</dd></div>
+    <div class="fact"><dt data-en="Total">총 강의</dt><dd class="gold">94:37</dd></div>
+    <div class="fact"><dt data-en="Week">주차</dt><dd class="gold">1 / 4</dd></div>
   </dl>
 
   <div class="clips">
     <figure class="clip">
       <div class="fr"><video controls playsinline preload="none" poster="adca5012c24.jpg" src="a8893a36bd0.mp4"></video></div>
       <figcaption>
-        <p class="cap">시범 · 2분 50초</p>
-        <p class="cap2">음악에 맞춰 추는 시범입니다.</p>
+        <p class="cap" data-en="Demonstration · 2:50">시범 · 2분 50초</p>
+        <p class="cap2" data-en="A demonstration danced to the music.">음악에 맞춰 추는 시범입니다.</p>
       </figcaption>
     </figure>
     <figure class="clip">
       <div class="fr"><video controls playsinline preload="none" poster="a2cf9cf4c7c.jpg" src="ad68a5f9f29.mp4"></video></div>
       <figcaption>
-        <p class="cap">수업 정리 · 3분 14초</p>
-        <p class="cap2">수업을 정리하며 짚어 주는 대목입니다.</p>
+        <p class="cap" data-en="Class summary · 3:14">수업 정리 · 3분 14초</p>
+        <p class="cap2" data-en="The passage where they sum up and go back over the class.">수업을 정리하며 짚어 주는 대목입니다.</p>
       </figcaption>
     </figure>
   </div>
-  <p class="keyhint">핵심만 보기 — 형광펜 친 곳만 읽으면 두 시간이 3분입니다. 버튼을 다시 누르면 전체가 돌아옵니다.</p>
-  <p class="clipnote">아래 기록은 이 두 편을 글로 풀어 놓은 것입니다.</p>
+  <p class="keyhint" data-en="Key points only — read just the highlighted lines and two hours becomes three minutes. Press again to bring everything back.">핵심만 보기 — 형광펜 친 곳만 읽으면 두 시간이 3분입니다. 버튼을 다시 누르면 전체가 돌아옵니다.</p>
+  <p class="clipnote" data-en="What follows is these two clips written out.">아래 기록은 이 두 편을 글로 풀어 놓은 것입니다.</p>
 </header>
 
 <!-- ============ COURSE ============ -->
 <section id="course">
   <div class="shead col rv">
-    <p class="eyebrow">강사 · 과정</p>
-    <h2>누가, 무엇을 가르쳤나</h2>
-    <p>같은 동작을 두 분이 각자의 몸에서 한 번씩 설명합니다. 리드하는 몸과 받는 몸이 각각 무엇을 느끼는지가 따로 나오기 때문에, 이 기록도 발언자를 나눠 두었습니다.</p>
+    <p class="eyebrow" data-en="Instructors · Course">강사 · 과정</p>
+    <h2 data-en="Who taught, and what">누가, 무엇을 가르쳤나</h2>
+    <p data-en="The same move is explained twice, once from inside each body. What the leading body feels and what the receiving body feels come out separately, so this record keeps the two voices apart.">같은 동작을 두 분이 각자의 몸에서 한 번씩 설명합니다. 리드하는 몸과 받는 몸이 각각 무엇을 느끼는지가 따로 나오기 때문에, 이 기록도 발언자를 나눠 두었습니다.</p>
   </div>
 
   <div class="teachers rv">
     <div class="tbox k">
       <p class="role">Leader</p>
-      <p class="nm">경수쌤</p>
+      <p class="nm" data-en="Soo">경수쌤</p>
       <p class="lat">Soo</p>
       <div class="awards">
         <span class="medal">🥇 <b>2023 KOREA BACHATA CHAMP</b></span>
-        <span class="medal">유럽 JnJ 심사위원</span>
-        <span class="medal">전세계 60여 개 도시 초청</span>
-        <span class="medal">BachazoukKorea 설립 · 운영</span>
+        <span class="medal" data-en="European J&amp;amp;J pro judge">유럽 JnJ 심사위원</span>
+        <span class="medal" data-en="Invited to 60+ cities worldwide">전세계 60여 개 도시 초청</span>
+        <span class="medal" data-en="Founded and runs BachazoukKorea">BachazoukKorea 설립 · 운영</span>
       </div>
-      <p><strong>2023년 한국 바차타 챔피언</strong>입니다. 지금은 겨루는 쪽보다 심사하는 쪽에 더 자주 서는데, 유럽 프로 <strong>잭 앤 질(J&amp;J) 무대의 심사위원</strong>이자 현역 아티스트로 초청받아 <strong>전세계 60여 개 도시</strong>에서 가르쳐 왔습니다. 포스터에 “아티스트를 티칭하는 국제 아티스트”라는 말이 붙는 이유입니다.</p>
-        <p>바차타와 주크를 잇는 <strong>한국 최초의 바차주크 아카데미</strong>를 열어 직접 운영하고 있습니다. 이 수업에서는 <strong>리드와 전체 진행</strong>을 맡습니다. 손 높이로 체스트를 여닫는 법, 수직과 수평 리드의 구분, 패턴이 만들어지는 원리가 모두 이쪽 설명입니다. 동작을 알려주기보다 <em>왜 그렇게 되는지</em>를 먼저 풀어놓는 편이라, 이 기록에 남은 설명의 대부분이 여기서 나왔습니다.</p>
+      <p data-en="&lt;strong&gt;2023 Korea Bachata Champion.&lt;/strong&gt; These days he judges more often than he competes — invited across &lt;strong&gt;60+ cities worldwide&lt;/strong&gt; as a working artist and as a &lt;strong&gt;judge on European pro Jack &amp;amp; Jill panels&lt;/strong&gt;. That is why the poster calls him “an international artist who teaches artists.”"><strong>2023년 한국 바차타 챔피언</strong>입니다. 지금은 겨루는 쪽보다 심사하는 쪽에 더 자주 서는데, 유럽 프로 <strong>잭 앤 질(J&amp;J) 무대의 심사위원</strong>이자 현역 아티스트로 초청받아 <strong>전세계 60여 개 도시</strong>에서 가르쳐 왔습니다. 포스터에 “아티스트를 티칭하는 국제 아티스트”라는 말이 붙는 이유입니다.</p>
+        <p data-en="He founded and runs &lt;strong&gt;Korea&#x27;s first Bachazouk academy&lt;/strong&gt;, bridging bachata and zouk. In this class he takes &lt;strong&gt;the lead and the overall teaching&lt;/strong&gt;. Opening and closing the chest through hand height, the difference between vertical and horizontal leads, how patterns are built — all of that is his. He unpacks &lt;em&gt;why it works that way&lt;/em&gt; before showing the move, which is where most of what is written here came from.">바차타와 주크를 잇는 <strong>한국 최초의 바차주크 아카데미</strong>를 열어 직접 운영하고 있습니다. 이 수업에서는 <strong>리드와 전체 진행</strong>을 맡습니다. 손 높이로 체스트를 여닫는 법, 수직과 수평 리드의 구분, 패턴이 만들어지는 원리가 모두 이쪽 설명입니다. 동작을 알려주기보다 <em>왜 그렇게 되는지</em>를 먼저 풀어놓는 편이라, 이 기록에 남은 설명의 대부분이 여기서 나왔습니다.</p>
       <p class="ig">@soo_bachazouk</p>
     </div>
     <div class="tbox r">
       <p class="role">Follower</p>
-      <p class="nm">류지쌤</p>
+      <p class="nm" data-en="Ruji">류지쌤</p>
       <p class="lat">Ruji</p>
       <div class="awards">
         <span class="medal">🥇 <b>2025 KBL J&amp;J King of Kings</b></span>
         <span class="medal">Director · Ryubalance / RyuTention</span>
       </div>
-      <p>즉석에서 짝을 지어 겨루는 <strong>잭 앤 질(Jack &amp; Jill)</strong> 무대에서 증명된 팔로워입니다. 2025년 KBL 킹 오브 킹스에서 우승했습니다. 정해진 안무 없이 처음 만난 리더의 신호만으로 추는 종목이라, 이 수업이 내내 이야기하는 <em>커넥션</em>이 그대로 실력이 되는 자리입니다.</p>
-      <p>같은 동작을 <strong>팔로워의 몸 안쪽에서</strong> 다시 풀어 줍니다. 코어가 몸을 데려간다는 원칙, 헤드가 물처럼 흐른다는 이미지, 손가락이 아니라 등 근육으로 텐션을 잡는 법이 이쪽입니다. 본인 이름을 딴 <strong>Ryubalance</strong>와 <strong>RyuTention</strong>을 이끌고 있습니다.</p>
+      <p data-en="A follower proven on the &lt;strong&gt;Jack &amp;amp; Jill&lt;/strong&gt; floor, where partners are drawn at random. She won &lt;strong&gt;KBL King of Kings in 2025&lt;/strong&gt;. With no set choreography, you dance on the signals of a leader you have just met — so the &lt;em&gt;connection&lt;/em&gt; this class talks about all day is exactly the skill being judged.">즉석에서 짝을 지어 겨루는 <strong>잭 앤 질(Jack &amp; Jill)</strong> 무대에서 증명된 팔로워입니다. 2025년 KBL 킹 오브 킹스에서 우승했습니다. 정해진 안무 없이 처음 만난 리더의 신호만으로 추는 종목이라, 이 수업이 내내 이야기하는 <em>커넥션</em>이 그대로 실력이 되는 자리입니다.</p>
+      <p data-en="She re-explains the same move &lt;strong&gt;from inside the follower&#x27;s body&lt;/strong&gt;: the core carrying the body, the head flowing like water, catching tension with the back rather than the fingers. She directs &lt;strong&gt;Ryubalance&lt;/strong&gt; and &lt;strong&gt;RyuTention&lt;/strong&gt;, both named after her.">같은 동작을 <strong>팔로워의 몸 안쪽에서</strong> 다시 풀어 줍니다. 코어가 몸을 데려간다는 원칙, 헤드가 물처럼 흐른다는 이미지, 손가락이 아니라 등 근육으로 텐션을 잡는 법이 이쪽입니다. 본인 이름을 딴 <strong>Ryubalance</strong>와 <strong>RyuTention</strong>을 이끌고 있습니다.</p>
       <p class="ig">@ruji_latindancer</p>
     </div>
   </div>
 
   <div class="course rv">
     <dl class="infobox">
-      <div class="irow"><dt>과정</dt><dd>Bachata All-in-One Training<small>JnJ 뮤지컬리티, 풋워크, 바차주크까지 다루는 4주 커리큘럼</small></dd></div>
-      <div class="irow"><dt>시간</dt><dd>매주 일요일 19:00 – 21:00<small>수업 후 라틴바 정모</small></dd></div>
-      <div class="irow"><dt>일정</dt><dd>8월 30일 · 9월 13일 · 20일 · 27일<small>9월 6일 휴강 — 이 기록은 첫 주차입니다</small></dd></div>
-      <div class="irow"><dt>수강료</dt><dd>4주 14만원<small>20대 50% · 커플수강 혹은 연강 1만원 할인 · 친구 소개 시 본인 무료</small></dd></div>
-      <div class="irow"><dt>장소</dt><dd>강남 연습실<small>역삼동 749-21 그레이홀</small></dd></div>
-      <div class="irow"><dt>문의</dt><dd>오픈카톡방 &ldquo;바차주크코리아&rdquo;</dd></div>
+      <div class="irow"><dt data-en="Course">과정</dt><dd data-en="Bachata All-in-One Training&lt;small&gt;A four-week curriculum covering JnJ musicality, footwork and bachazouk&lt;/small&gt;">Bachata All-in-One Training<small>JnJ 뮤지컬리티, 풋워크, 바차주크까지 다루는 4주 커리큘럼</small></dd></div>
+      <div class="irow"><dt data-en="Time">시간</dt><dd data-en="Sundays 19:00 – 21:00&lt;small&gt;Latin bar gathering after class&lt;/small&gt;">매주 일요일 19:00 – 21:00<small>수업 후 라틴바 정모</small></dd></div>
+      <div class="irow"><dt data-en="Dates">일정</dt><dd data-en="Aug 30 · Sep 13 · 20 · 27&lt;small&gt;No class Sep 6 — this record is week one&lt;/small&gt;">8월 30일 · 9월 13일 · 20일 · 27일<small>9월 6일 휴강 — 이 기록은 첫 주차입니다</small></dd></div>
+      <div class="irow"><dt data-en="Fee">수강료</dt><dd data-en="₩140,000 for four weeks&lt;small&gt;50% off in your 20s · ₩10,000 off for couples or back-to-back classes · free when a friend you refer joins&lt;/small&gt;">4주 14만원<small>20대 50% · 커플수강 혹은 연강 1만원 할인 · 친구 소개 시 본인 무료</small></dd></div>
+      <div class="irow"><dt data-en="Place">장소</dt><dd data-en="Gangnam studio&lt;small&gt;Grey Hall, 749-21 Yeoksam-dong, Seoul&lt;/small&gt;">강남 연습실<small>역삼동 749-21 그레이홀</small></dd></div>
+      <div class="irow"><dt data-en="Contact">문의</dt><dd data-en="Open KakaoTalk room &amp;ldquo;바차주크코리아&amp;rdquo;">오픈카톡방 &ldquo;바차주크코리아&rdquo;</dd></div>
     </dl>
     <figure class="poster">
-      <img src="aca8441514a.jpg" alt="Bachata All-in-One Training 수업 안내 포스터">
+      <img src="aca8441514a.jpg" alt="Bachata All-in-One Training 수업 안내 포스터" data-en-alt="Bachata All-in-One Training course poster">
       <figcaption>COURSE POSTER · 2026</figcaption>
     </figure>
   </div>
 
   <div class="grid rv">
-    <div class="cell"><p class="n">01</p><h4>한 달 동안 한 곡만 판다</h4>
-      <p>매주 새로운 걸 흩뿌리면 남는 게 없습니다. 그래서 이번 달은 음악을 하나 정해 그 안에서 반복하고, 마지막 주차에는 그 곡으로 다 같이 촬영하고 공연도 해 보자는 이야기가 나옵니다.</p></div>
-    <div class="cell"><p class="n">02</p><h4>헤드가 주인공이 아니다</h4>
-      <p>수업 내내 돌아오는 말은 헤드가 아니라 체스트와 중심 이동, 그리고 텐션입니다. 헤드는 그 셋이 갖춰졌을 때 자연스럽게 따라 나오는 결과입니다.</p></div>
-    <div class="cell"><p class="n">03</p><h4>원리가 먼저, 조립은 나중</h4>
-      <p>1교시에서 커넥션을 하나씩 뜯어 연습하고, 2교시에서 그것들을 긴 콤비네이션 하나로 묶습니다. 1교시를 건너뛰면 2교시는 그냥 외우기가 됩니다.</p></div>
+    <div class="cell"><p class="n">01</p><h4 data-en="One song for a whole month">한 달 동안 한 곡만 판다</h4>
+      <p data-en="Scattering something new every week leaves nothing behind. So this month one song is chosen and repeated inside it, and in the final week the idea is to film it together and perform it.">매주 새로운 걸 흩뿌리면 남는 게 없습니다. 그래서 이번 달은 음악을 하나 정해 그 안에서 반복하고, 마지막 주차에는 그 곡으로 다 같이 촬영하고 공연도 해 보자는 이야기가 나옵니다.</p></div>
+    <div class="cell"><p class="n">02</p><h4 data-en="The head is not the subject">헤드가 주인공이 아니다</h4>
+      <p data-en="What keeps coming back all class is not the head but the chest, the weight shift and the tension. The head is what follows naturally once those three are in place.">수업 내내 돌아오는 말은 헤드가 아니라 체스트와 중심 이동, 그리고 텐션입니다. 헤드는 그 셋이 갖춰졌을 때 자연스럽게 따라 나오는 결과입니다.</p></div>
+    <div class="cell"><p class="n">03</p><h4 data-en="Principles first, assembly later">원리가 먼저, 조립은 나중</h4>
+      <p data-en="Class 1 takes connection apart and drills it piece by piece; class 2 ties those pieces into one long combination. Skip class 1 and class 2 becomes memorisation.">1교시에서 커넥션을 하나씩 뜯어 연습하고, 2교시에서 그것들을 긴 콤비네이션 하나로 묶습니다. 1교시를 건너뛰면 2교시는 그냥 외우기가 됩니다.</p></div>
   </div>
 </section>
 
 <!-- ============ CORE ============ -->
 <section id="core">
   <div class="shead col rv">
-    <p class="eyebrow">핵심 원리</p>
-    <h2>두 시간을 관통하는 다섯 가지</h2>
-    <p>형태를 바꿔가며 강의 내내 다시 돌아온 이야기들입니다. 나머지는 사실 이 다섯 가지의 응용이라고 봐도 좋습니다.</p>
+    <p class="eyebrow" data-en="Core ideas">핵심 원리</p>
+    <h2 data-en="Five ideas that run through both hours">두 시간을 관통하는 다섯 가지</h2>
+    <p data-en="These came back again and again in different shapes. Everything else is really an application of these five.">형태를 바꿔가며 강의 내내 다시 돌아온 이야기들입니다. 나머지는 사실 이 다섯 가지의 응용이라고 봐도 좋습니다.</p>
   </div>
 
   <div class="tl">
@@ -458,19 +466,19 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">I</div>
       <div class="body">
-        <span class="who w-both">둘 다</span>
-        <h3>체중은 100%로 옮긴다</h3>
-        <p><mark>오른쪽으로 열면 무게는 온전히 오른쪽에, 왼쪽이면 온전히 왼쪽에 실려야 합니다.</mark> <mark>반대쪽 발을 들어 올릴 수 있을 만큼요.</mark> 발만 옮기고 무게를 가운데 남겨 두면 리더는 리드를 걸 곳이 없고, 팔로워도 받을 것이 없습니다.</p>
+        <span class="who w-both" data-en="Both">둘 다</span>
+        <h3 data-en="Shift your weight 100%">체중은 100%로 옮긴다</h3>
+        <p data-en="&lt;mark&gt;Open to the right and the weight belongs entirely on the right; open left and entirely on the left.&lt;/mark&gt; &lt;mark&gt;Enough that you could lift the other foot.&lt;/mark&gt; Move only your feet and leave the weight in the middle, and the leader has nowhere to place a lead and the follower has nothing to receive."><mark>오른쪽으로 열면 무게는 온전히 오른쪽에, 왼쪽이면 온전히 왼쪽에 실려야 합니다.</mark> <mark>반대쪽 발을 들어 올릴 수 있을 만큼요.</mark> 발만 옮기고 무게를 가운데 남겨 두면 리더는 리드를 걸 곳이 없고, 팔로워도 받을 것이 없습니다.</p>
         <blockquote>
-          <p>“발을 뗄 수 있을 정도로 무게를 확실하게. 바차타에서는 무게를 옮기는 게 너무 중요해요. 발만 움직이고 무게는 5 대 5로 두고 계시면 리더가 리드를 할 수가 없고, 팔로워가 리드를 받을 수가 없어요.”</p>
-          <cite><b>경수쌤</b>1교시 06:29</cite>
+          <p data-en="“Committed enough that you could lift the foot. In bachata shifting the weight matters enormously. If you only move your feet and leave the weight fifty-fifty, the leader cannot lead and the follower cannot receive the lead.”">“발을 뗄 수 있을 정도로 무게를 확실하게. 바차타에서는 무게를 옮기는 게 너무 중요해요. 발만 움직이고 무게는 5 대 5로 두고 계시면 리더가 리드를 할 수가 없고, 팔로워가 리드를 받을 수가 없어요.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 1 · 06:29"><b>경수쌤</b>1교시 06:29</cite>
         </blockquote>
 
         <figure class="dia">
-<p class="dianum">도해 01 · 실제 수업 영상</p>
-<h4 class="diatitle">체중이 실린 다리</h4>
-<div class="shot"><img src="a05b09a505a.jpg" alt="한쪽 다리에 체중을 실은 경수쌤"><p class="barlabel">경수쌤의 <b>오른다리에 체중이 온전히</b> 실려 무릎이 굽었습니다. 왼다리는 거의 짚기만 합니다.</p></div>
-<figcaption>발만 옮기고 무게를 가운데 남겨 두면 리더는 리드를 걸 곳이 없습니다. <b>한쪽 발을 실제로 들 수 있는지</b>로 확인해 보세요.</figcaption>
+<p class="dianum" data-en="Figure 01 · from the class footage">도해 01 · 실제 수업 영상</p>
+<h4 class="diatitle" data-en="The leg the weight sits on">체중이 실린 다리</h4>
+<div class="shot"><img src="a05b09a505a.jpg" alt="한쪽 다리에 체중을 실은 경수쌤" data-en-alt="Soo with his weight loaded onto one leg"><p class="barlabel" data-en="Soo&#x27;s &lt;b&gt;weight is entirely on his right leg&lt;/b&gt;, knee bent. The left leg is barely touching the floor.">경수쌤의 <b>오른다리에 체중이 온전히</b> 실려 무릎이 굽었습니다. 왼다리는 거의 짚기만 합니다.</p></div>
+<figcaption data-en="Move only your feet and leave the weight in the middle, and there is nowhere to place a lead. &lt;b&gt;Check whether you can actually lift one foot.&lt;/b&gt;">발만 옮기고 무게를 가운데 남겨 두면 리더는 리드를 걸 곳이 없습니다. <b>한쪽 발을 실제로 들 수 있는지</b>로 확인해 보세요.</figcaption>
 </figure>
       </div>
     </div>
@@ -478,16 +486,16 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">II</div>
       <div class="body">
-        <span class="who w-both">둘 다</span>
-        <h3>일라스티시티 — 고무줄처럼</h3>
-        <p><mark>멀어지면 당기는 힘이 생기고, 가까워지면 미는 힘이 생깁니다.</mark> 이 탄력이 있어야 리드가 흐릅니다. 없으면 손으로 끌고 다니는 춤이 되고요. 경수쌤은 이것이 헤드 무브먼트만의 기술이 아니라, 댄스스포츠에서 제일 먼저 배우는 모든 춤의 기본이라고 짚습니다.</p>
-        <p>다만 한 사람만 해서는 성립하지 않습니다. 리더가 당길 때 팔로워가 가만히 있으면 리더가 앞으로 넘어집니다. 멀어지면 팔로워도 같은 힘으로 당기고, 가까워지면 같이 밀어야 이 순환이 돌아갑니다.</p>
+        <span class="who w-both" data-en="Both">둘 다</span>
+        <h3 data-en="Elasticity — like a rubber band">일라스티시티 — 고무줄처럼</h3>
+        <p data-en="&lt;mark&gt;Move apart and a pull appears; move closer and a push appears.&lt;/mark&gt; That spring is what makes a lead travel. Without it you end up dragging your partner by the hand. Soo is clear that this is not a head-movement technique — it is the first thing taught in ballroom, the basis of every dance."><mark>멀어지면 당기는 힘이 생기고, 가까워지면 미는 힘이 생깁니다.</mark> 이 탄력이 있어야 리드가 흐릅니다. 없으면 손으로 끌고 다니는 춤이 되고요. 경수쌤은 이것이 헤드 무브먼트만의 기술이 아니라, 댄스스포츠에서 제일 먼저 배우는 모든 춤의 기본이라고 짚습니다.</p>
+        <p data-en="It does not work if only one person does it. If the follower stands still while the leader pulls, the leader falls forward. Move apart and the follower pulls with equal force; move closer and both push. That is what keeps the cycle turning.">다만 한 사람만 해서는 성립하지 않습니다. 리더가 당길 때 팔로워가 가만히 있으면 리더가 앞으로 넘어집니다. 멀어지면 팔로워도 같은 힘으로 당기고, 가까워지면 같이 밀어야 이 순환이 돌아갑니다.</p>
 
         <figure class="dia">
-<p class="dianum">도해 02 · 실제 수업 영상</p>
-<h4 class="diatitle">멀어지면 서로 당긴다</h4>
-<div class="shot"><img src="a03ba2d8220.jpg" alt="두 사람이 멀어지며 서로를 당기는 순간"><svg class="ann" viewBox="0 0 1000 1277" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="ap" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E7C878"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F0B79B"/></marker></defs><path d="M430,165 L120,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><path d="M570,165 L880,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><text x="500" y="120" text-anchor="middle" font-family="IBM Plex Sans KR, sans-serif" font-size="40" font-weight="700" fill="#E7C878" stroke="rgba(6,5,4,.85)" stroke-width="7" paint-order="stroke">서로 당긴다</text></svg><p class="barlabel">팔이 아니라 <b>몸이 뒤로 기울며</b> 서로를 당기고 있습니다. 한쪽만 하면 상대가 앞으로 넘어집니다.</p></div>
-<figcaption>두 사람 사이가 벌어지는 순간입니다. 이 탄력이 있어야 리드가 손이 아니라 거리로 전해집니다.</figcaption>
+<p class="dianum" data-en="Figure 02 · from the class footage">도해 02 · 실제 수업 영상</p>
+<h4 class="diatitle" data-en="Apart, and pulling toward each other">멀어지면 서로 당긴다</h4>
+<div class="shot"><img src="a03ba2d8220.jpg" alt="두 사람이 멀어지며 서로를 당기는 순간" data-en-alt="The moment the two move apart and pull toward each other"><svg class="ann" viewBox="0 0 1000 1277" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="ap" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E7C878"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F0B79B"/></marker></defs><path d="M430,165 L120,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><path d="M570,165 L880,165" stroke="#E7C878" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#ap)" marker-start="url(#ap)"/><text x="500" y="120" text-anchor="middle" font-family="IBM Plex Sans KR, sans-serif" font-size="40" font-weight="700" fill="#E7C878" stroke="rgba(6,5,4,.85)" stroke-width="7" paint-order="stroke" data-en="Pulling toward each other">서로 당긴다</text></svg><p class="barlabel" data-en="They are pulling with &lt;b&gt;the body leaning back&lt;/b&gt;, not with the arm. If only one does it, the other falls forward.">팔이 아니라 <b>몸이 뒤로 기울며</b> 서로를 당기고 있습니다. 한쪽만 하면 상대가 앞으로 넘어집니다.</p></div>
+<figcaption data-en="The moment the distance opens. This spring is what lets the lead travel through distance rather than through the hand.">두 사람 사이가 벌어지는 순간입니다. 이 탄력이 있어야 리드가 손이 아니라 거리로 전해집니다.</figcaption>
 </figure>
       </div>
     </div>
@@ -495,12 +503,12 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">III</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>리더</i></span>
-        <h3>손 높이가 팔로워의 체스트를 연다</h3>
-        <p>이 수업에서 가장 응용이 넓은 도구입니다. <mark>턴은 턴이고, 체스트가 열리고 닫히는 것은 손 높이가 따로 만든다</mark>는 이야기죠. 손을 올리면 열리고, 중립으로 내리면 중립, 더 내리면 닫힙니다. 둘을 나눠서 이해하면 같은 턴 안에서도 팔로워의 상체를 원하는 대로 그릴 수 있습니다.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;Leader&lt;/i&gt;"><b>경수쌤</b><i>리더</i></span>
+        <h3 data-en="Hand height opens the follower&#x27;s chest">손 높이가 팔로워의 체스트를 연다</h3>
+        <p data-en="The most widely applicable tool in the class. &lt;mark&gt;A turn is a turn; the chest opening and closing is made separately, by hand height.&lt;/mark&gt; Raise the hand and it opens; lower it to neutral and it is neutral; lower it further and it closes. Separate the two and you can shape the follower&#x27;s upper body freely inside the same turn.">이 수업에서 가장 응용이 넓은 도구입니다. <mark>턴은 턴이고, 체스트가 열리고 닫히는 것은 손 높이가 따로 만든다</mark>는 이야기죠. 손을 올리면 열리고, 중립으로 내리면 중립, 더 내리면 닫힙니다. 둘을 나눠서 이해하면 같은 턴 안에서도 팔로워의 상체를 원하는 대로 그릴 수 있습니다.</p>
         <blockquote>
-          <p>“턴이 시작되는 것과 이건 별개로 이해하셔야 돼요. 제가 가다가 손을 점점 내리기 시작하면 체스트가 클로즈가 되겠죠? 왜? 내 손이 아래니까.”</p>
-          <cite><b>경수쌤</b>2교시 01:20</cite>
+          <p data-en="“Understand that this is separate from the turn starting. If I gradually lower my hand as we go, the chest closes — why? Because my hand is low.”">“턴이 시작되는 것과 이건 별개로 이해하셔야 돼요. 제가 가다가 손을 점점 내리기 시작하면 체스트가 클로즈가 되겠죠? 왜? 내 손이 아래니까.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 2 · 01:20"><b>경수쌤</b>2교시 01:20</cite>
         </blockquote>
 
         
@@ -510,26 +518,26 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">IV</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>리더</i></span>
-        <h3>잡고 돌리려는 순간 닫힌다</h3>
-        <p>리더가 팔로워의 손 위치를 통제하려고 하면, <mark>정확히 그 순간 몸이 닫힙니다.</mark> 팔로워가 갈 길은 이미 정해져 있으니 손바닥 하나만 살짝 대고 보내 주면 된다는 이야기죠. 2교시 마지막에는 더 나아가서, 손가락 하나만 걸치고 팔로워의 다리가 지나갈 공간을 더 크게 내주라고 합니다.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;Leader&lt;/i&gt;"><b>경수쌤</b><i>리더</i></span>
+        <h3 data-en="The moment you grab and try to turn her, she closes">잡고 돌리려는 순간 닫힌다</h3>
+        <p data-en="When the leader tries to control where the follower&#x27;s hand is, &lt;mark&gt;her body closes at exactly that moment.&lt;/mark&gt; Her path is already set, so rest one palm lightly and send her. At the end of class 2 he goes further — hook a single finger and open up even more room for her leg to travel.">리더가 팔로워의 손 위치를 통제하려고 하면, <mark>정확히 그 순간 몸이 닫힙니다.</mark> 팔로워가 갈 길은 이미 정해져 있으니 손바닥 하나만 살짝 대고 보내 주면 된다는 이야기죠. 2교시 마지막에는 더 나아가서, 손가락 하나만 걸치고 팔로워의 다리가 지나갈 공간을 더 크게 내주라고 합니다.</p>
         <blockquote>
-          <p>“이걸 잡고 내가 돌려야지 생각하는 순간 닫혀요.”</p>
-          <cite><b>경수쌤</b>1교시 17:32</cite>
+          <p data-en="“The moment you think ‘I&#x27;ll grab this and turn her,’ she closes.”">“이걸 잡고 내가 돌려야지 생각하는 순간 닫혀요.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 1 · 17:32"><b>경수쌤</b>1교시 17:32</cite>
         </blockquote>
-        <p>이어서 영어로 한 번 더 짚습니다. <em>“Try not to control the position of her hands. Just let her go.”</em></p>
+        <p data-en="He repeats it in English: &lt;em&gt;“Try not to control the position of her hands. Just let her go.”&lt;/em&gt;">이어서 영어로 한 번 더 짚습니다. <em>“Try not to control the position of her hands. Just let her go.”</em></p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">V</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>팔로워에게</i></span>
-        <h3>헤드를 스스로 끊지 않는다</h3>
-        <p>예전 바차타는 무브가 단편적으로 끝나서 팔로워가 알아서 마무리해도 괜찮았습니다. 그런데 지금은 리더가 헤드에서 헤드로 이어 가기 때문에, <mark class="f">임의로 끊어 버리면 다음 동작이 죽습니다.</mark> 음악의 1이 나와도 리더가 아직 끝내지 않았다면 기다리는 쪽이 맞습니다.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;To the follower&lt;/i&gt;"><b>경수쌤</b><i>팔로워에게</i></span>
+        <h3 data-en="Never cut the head yourself">헤드를 스스로 끊지 않는다</h3>
+        <p data-en="Older bachata ended a move in one fragment, so the follower could finish it on her own. Now the leader carries head into head, so &lt;mark class=&quot;f&quot;&gt;cutting it off on your own kills the next move.&lt;/mark&gt; Even when the 1 lands in the music, if the leader has not finished, waiting is correct.">예전 바차타는 무브가 단편적으로 끝나서 팔로워가 알아서 마무리해도 괜찮았습니다. 그런데 지금은 리더가 헤드에서 헤드로 이어 가기 때문에, <mark class="f">임의로 끊어 버리면 다음 동작이 죽습니다.</mark> 음악의 1이 나와도 리더가 아직 끝내지 않았다면 기다리는 쪽이 맞습니다.</p>
         <blockquote>
-          <p>“음악적으로 정확하게 원이 안 나온다면 무조건 기다리는 거고요. 심지어 원이 나와도 리더가 아직 동작을 안 끝냈을 수 있잖아요. 베이직 밟지 마시고 기다리세요.”</p>
-          <cite><b>경수쌤</b>1교시 33:29</cite>
+          <p data-en="“If the 1 does not land musically, you simply wait. And even when the 1 does land, the leader may not have finished the move. Don&#x27;t step the basic — wait.”">“음악적으로 정확하게 원이 안 나온다면 무조건 기다리는 거고요. 심지어 원이 나와도 리더가 아직 동작을 안 끝냈을 수 있잖아요. 베이직 밟지 마시고 기다리세요.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 1 · 33:29"><b>경수쌤</b>1교시 33:29</cite>
         </blockquote>
       </div>
     </div>
@@ -541,9 +549,9 @@ a{color:var(--gold)}
 <section id="c1">
   <div class="classbar rv">
     <p class="no">Class One</p>
-    <h2>커넥션의 원리</h2>
-    <div class="meta"><span class="tag">52:41</span><span class="tag">일요일 19:11 시작</span><span class="tag">분해 연습</span></div>
-    <p class="thesis">헤드를 배우러 왔지만 첫 50분은 체스트와 중심 이동, 그리고 텐션에 씁니다. 헤드는 그것이 갖춰졌을 때 저절로 따라오는 결과라는 것이 이 교시의 이야기입니다.</p>
+    <h2 data-en="The principles of connection">커넥션의 원리</h2>
+    <div class="meta"><span class="tag">52:41</span><span class="tag" data-en="Sunday, started 19:11">일요일 19:11 시작</span><span class="tag" data-en="Breaking it down">분해 연습</span></div>
+    <p class="thesis" data-en="You came to learn head movement, but the first fifty minutes go to the chest, the weight shift and the tension. The head is what follows once those are in place — that is this hour&#x27;s argument.">헤드를 배우러 왔지만 첫 50분은 체스트와 중심 이동, 그리고 텐션에 씁니다. 헤드는 그것이 갖춰졌을 때 저절로 따라오는 결과라는 것이 이 교시의 이야기입니다.</p>
   </div>
 
   <div class="tl">
@@ -551,23 +559,23 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">06:14</div>
       <div class="body">
-        <span class="who w-both">기본형</span>
-        <h3>오픈에서 틸트 턴, 그리고 클로즈</h3>
-        <p>오픈한 상태를 닫지 않고 유지하다가 틸트 턴을 한 바퀴 돌고, 그 자리에서 클로즈합니다. 반대 방향도 똑같고요. <mark>출발 신호는 손이 아니라 중심 이동입니다.</mark> 리더가 먼저 무게를 옮겨 동력을 만들면 팔로워가 그것을 받아 나갑니다.</p>
-        <p>예전에는 중심을 아래로 한 번 내렸다가 에너지를 끌어올리며 열었는데, 요즘은 그 과정을 덜어내고 바로 뻗어서 엽니다. 다만 이 말은 2교시에서 조금 다듬어집니다 — 예비동작을 아주 없애라는 뜻이 아니라, <em>눈에 보일 만큼의 컨트랙션은 남겨 두어야</em> 팔로워가 오픈을 느낄 수 있다는 이야기입니다.</p>
+        <span class="who w-both" data-en="Base shape">기본형</span>
+        <h3 data-en="Open, tilt turn, then close">오픈에서 틸트 턴, 그리고 클로즈</h3>
+        <p data-en="Hold the open without closing it, take one full tilt turn, and close on the spot. Same in the other direction. &lt;mark&gt;The starting signal is not the hand but the weight shift.&lt;/mark&gt; The leader moves his weight first to create the drive, and the follower takes it and goes.">오픈한 상태를 닫지 않고 유지하다가 틸트 턴을 한 바퀴 돌고, 그 자리에서 클로즈합니다. 반대 방향도 똑같고요. <mark>출발 신호는 손이 아니라 중심 이동입니다.</mark> 리더가 먼저 무게를 옮겨 동력을 만들면 팔로워가 그것을 받아 나갑니다.</p>
+        <p data-en="It used to be that you dropped the centre low and pulled energy up to open. Now that step is trimmed away and you extend straight into it. This gets refined in class 2 though — it does not mean removing the preparation entirely, but that &lt;em&gt;a contraction visible to the eye must remain&lt;/em&gt; or the follower cannot feel the open.">예전에는 중심을 아래로 한 번 내렸다가 에너지를 끌어올리며 열었는데, 요즘은 그 과정을 덜어내고 바로 뻗어서 엽니다. 다만 이 말은 2교시에서 조금 다듬어집니다 — 예비동작을 아주 없애라는 뜻이 아니라, <em>눈에 보일 만큼의 컨트랙션은 남겨 두어야</em> 팔로워가 오픈을 느낄 수 있다는 이야기입니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">08:48</div>
       <div class="body">
-        <span class="who w-foll"><b>류지쌤</b><i>팔로워</i></span>
-        <h3>체스트가 헤드를 끌고 간다</h3>
-        <p>체스트를 확장해 고정한 채로 턴에 들어갑니다. 헤드에는 힘이 들어가지 않아야 합니다. 헤드는 체스트 위에 얹혀 있으니, <mark class="f">체스트를 끌고 오면 헤드가 따라오는 느낌</mark>이 맞습니다. 체스트가 앞으로 나가 있으면 끌고 올 때 헤드가 떨어져 버리고요.</p>
-        <p>시선은 옆이 아니라 살짝 대각선 아래를 봅니다. 그래야 안정적으로 돌아가고, 리더의 리드가 조금 부족해도 실수가 줄어듭니다. 그리고 리더가 어설프게 줬다고 그대로 있기보다는, <strong>내가 더 열어서 내 몸을 예쁘게 만든다</strong>는 태도가 팔로워의 몫입니다.</p>
+        <span class="who w-foll" data-en="&lt;b&gt;Ruji&lt;/b&gt;&lt;i&gt;Follower&lt;/i&gt;"><b>류지쌤</b><i>팔로워</i></span>
+        <h3 data-en="The chest carries the head">체스트가 헤드를 끌고 간다</h3>
+        <p data-en="Expand the chest, hold it, and enter the turn that way. No force should go into the head. The head sits on top of the chest, so &lt;mark class=&quot;f&quot;&gt;it should feel like the head follows when you carry the chest&lt;/mark&gt;. If the chest is pushed forward, the head drops as you bring it back.">체스트를 확장해 고정한 채로 턴에 들어갑니다. 헤드에는 힘이 들어가지 않아야 합니다. 헤드는 체스트 위에 얹혀 있으니, <mark class="f">체스트를 끌고 오면 헤드가 따라오는 느낌</mark>이 맞습니다. 체스트가 앞으로 나가 있으면 끌고 올 때 헤드가 떨어져 버리고요.</p>
+        <p data-en="The gaze goes slightly down on the diagonal, not to the side. That keeps the turn stable and cuts mistakes even when the lead is a little short. And rather than staying put because the leader gave it clumsily, &lt;strong&gt;opening more yourself to make your own line beautiful&lt;/strong&gt; is the follower&#x27;s job.">시선은 옆이 아니라 살짝 대각선 아래를 봅니다. 그래야 안정적으로 돌아가고, 리더의 리드가 조금 부족해도 실수가 줄어듭니다. 그리고 리더가 어설프게 줬다고 그대로 있기보다는, <strong>내가 더 열어서 내 몸을 예쁘게 만든다</strong>는 태도가 팔로워의 몫입니다.</p>
         <div class="callout">
-          <p class="lab">자주 나오는 실수</p>
-          <p>이 구간에서 바로 잡아 주는 것이 <strong>힐이 떨어지는 것</strong>입니다. 체스트에서 에너지를 만들어 올라가야 하는데, 턱이나 상체가 먼저 내려가면서 뒤꿈치가 뜹니다.</p>
+          <p class="lab" data-en="A mistake that keeps coming up">자주 나오는 실수</p>
+          <p data-en="What gets corrected right here is &lt;strong&gt;the heel lifting&lt;/strong&gt;. The energy should be built in the chest on the way up, but the chin or the upper body drops first and the heel comes off the floor.">이 구간에서 바로 잡아 주는 것이 <strong>힐이 떨어지는 것</strong>입니다. 체스트에서 에너지를 만들어 올라가야 하는데, 턱이나 상체가 먼저 내려가면서 뒤꿈치가 뜹니다.</p>
         </div>
       </div>
     </div>
@@ -575,12 +583,12 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">10:28</div>
       <div class="body">
-        <span class="who w-foll"><b>류지쌤</b><i>팔로워</i></span>
-        <h3>코어가 몸을 데리고 간다</h3>
-        <p><mark class="f">무게중심을 옮길 때 앞장서는 것은 코어와 엉덩이입니다.</mark> 나머지는 그냥 두면 됩니다. 코어로 데려가면 나머지는 알아서 펼쳐지는데, 상체를 먼저 데려가려고 하면 그 순간 형태가 무너집니다.</p>
+        <span class="who w-foll" data-en="&lt;b&gt;Ruji&lt;/b&gt;&lt;i&gt;Follower&lt;/i&gt;"><b>류지쌤</b><i>팔로워</i></span>
+        <h3 data-en="The core carries the body">코어가 몸을 데리고 간다</h3>
+        <p data-en="&lt;mark class=&quot;f&quot;&gt;What leads when you shift your weight is the core and the hips.&lt;/mark&gt; Leave the rest alone. Carry it with the core and everything else unfolds by itself; try to lead with the upper body and the shape collapses at that moment."><mark class="f">무게중심을 옮길 때 앞장서는 것은 코어와 엉덩이입니다.</mark> 나머지는 그냥 두면 됩니다. 코어로 데려가면 나머지는 알아서 펼쳐지는데, 상체를 먼저 데려가려고 하면 그 순간 형태가 무너집니다.</p>
         <blockquote class="foll">
-          <p>“가운데 있는 코어가 내 몸을 데리고 간다고 생각하고 움직이죠. 그러면 나머지는 내버려 두죠.”</p>
-          <cite><b>류지쌤</b>1교시 10:28</cite>
+          <p data-en="“Move thinking that the core in the middle carries my body. Then just leave the rest alone.”">“가운데 있는 코어가 내 몸을 데리고 간다고 생각하고 움직이죠. 그러면 나머지는 내버려 두죠.”</p>
+          <cite data-en="&lt;b&gt;Ruji&lt;/b&gt;Class 1 · 10:28"><b>류지쌤</b>1교시 10:28</cite>
         </blockquote>
       </div>
     </div>
@@ -588,52 +596,52 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">13:39</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>리더</i></span>
-        <h3>손가락 하나냐, 면이냐</h3>
-        <p>그립 하나가 춤의 결을 정합니다. 손가락 하나를 가져가면 팔로워는 팔꿈치를 내리는 것이 맞습니다. 전통 바차타의 그립이고 드롭 앤 캐치 같은 동작에 쓰죠. 반면 손가락 여러 개로 면을 만들면 밀 수 있게 되고, 끝에서 결과가 완전히 달라집니다.</p>
-        <p>여기서 흔한 오해 하나를 풀어 줍니다. <mark>손바닥을 꼭 마주 대고 있어야 센슈얼이 되는 것은 아닙니다.</mark> 손등을 대더라도 손가락 여러 개로 면만 만들면 밀립니다. 베이직을 밟다가 손가락을 슬쩍 면으로 바꾸면서 체스트를 밀면 똑같은 루프가 생깁니다.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;Leader&lt;/i&gt;"><b>경수쌤</b><i>리더</i></span>
+        <h3 data-en="One finger, or a surface?">손가락 하나냐, 면이냐</h3>
+        <p data-en="One grip decides the grain of the dance. Give one finger and the follower is right to drop her elbow — that is the traditional bachata grip, used for things like drop and catch. Make a surface with several fingers and you can push instead, and the result at the end is completely different.">그립 하나가 춤의 결을 정합니다. 손가락 하나를 가져가면 팔로워는 팔꿈치를 내리는 것이 맞습니다. 전통 바차타의 그립이고 드롭 앤 캐치 같은 동작에 쓰죠. 반면 손가락 여러 개로 면을 만들면 밀 수 있게 되고, 끝에서 결과가 완전히 달라집니다.</p>
+        <p data-en="Here he clears up a common misconception. &lt;mark&gt;Palms do not have to be pressed together for it to be sensual.&lt;/mark&gt; Even back of hand to back of hand, a surface made with several fingers will push. Step the basic, quietly turn the fingers into a surface, push the chest — the same loop appears.">여기서 흔한 오해 하나를 풀어 줍니다. <mark>손바닥을 꼭 마주 대고 있어야 센슈얼이 되는 것은 아닙니다.</mark> 손등을 대더라도 손가락 여러 개로 면만 만들면 밀립니다. 베이직을 밟다가 손가락을 슬쩍 면으로 바꾸면서 체스트를 밀면 똑같은 루프가 생깁니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">16:53</div>
       <div class="body">
-        <span class="who w-warn">안전</span>
-        <h3>팔로워의 손을 뒤로 보내지 않는다</h3>
-        <p>리더가 손을 들어 팔로워의 뒤쪽으로 보내려고 하면 다치기 쉽습니다. 뒤로 보낸다고 생각하기보다는, <mark>가는 길에 살짝 내려 준다</mark>고 생각하는 편이 안전합니다. 팔로워가 갈 길은 이미 정해져 있으니 리더는 그 순간에 손을 잠깐 내려 주기만 하면 됩니다.</p>
-        <p>연습할 때는 한 바퀴를 다 끝내고 멈추지만 실제로 출 때는 그렇지 않습니다. 손이 애매한 중간 위치에 있는 순간이 있고, 그때 내려가는 게 느껴지면 그 영향을 받습니다. 100%를 다 채우고 멈춰야 하는 것은 아닙니다.</p>
+        <span class="who w-warn" data-en="Safety">안전</span>
+        <h3 data-en="Never send the follower&#x27;s hand behind her">팔로워의 손을 뒤로 보내지 않는다</h3>
+        <p data-en="If the leader raises his hand and tries to send it behind her, she gets hurt easily. Rather than thinking of sending it back, it is safer to think of &lt;mark&gt;lowering it a little along the way&lt;/mark&gt;. Her path is already set, so the leader only has to drop the hand for that instant.">리더가 손을 들어 팔로워의 뒤쪽으로 보내려고 하면 다치기 쉽습니다. 뒤로 보낸다고 생각하기보다는, <mark>가는 길에 살짝 내려 준다</mark>고 생각하는 편이 안전합니다. 팔로워가 갈 길은 이미 정해져 있으니 리더는 그 순간에 손을 잠깐 내려 주기만 하면 됩니다.</p>
+        <p data-en="In practice you finish the full turn and stop, but dancing is not like that. There is a moment where the hand sits somewhere ambiguous, and if it is felt going down there, that registers. You do not have to fill 100% before stopping.">연습할 때는 한 바퀴를 다 끝내고 멈추지만 실제로 출 때는 그렇지 않습니다. 손이 애매한 중간 위치에 있는 순간이 있고, 그때 내려가는 게 느껴지면 그 영향을 받습니다. 100%를 다 채우고 멈춰야 하는 것은 아닙니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">22:03</div>
       <div class="body">
-        <span class="who w-both">둘 다</span>
-        <h3>줄다리기 — 리더 혼자서는 안 된다</h3>
-        <p>리더가 면으로 바꿔 주면 팔로워는 손바닥과 팔로 그 에너지를 받습니다. 중요한 건 높이입니다. 가슴과 코어 사이 어디쯤에서 리더가 자기 쪽으로 살짝 집중시켰다가 움직이죠. 양은 작지만 <mark>집중하게 만든 다음에 가야 합니다.</mark> 갑자기 툭 밀면 가지 않습니다.</p>
+        <span class="who w-both" data-en="Both">둘 다</span>
+        <h3 data-en="Tug of war — the leader cannot do it alone">줄다리기 — 리더 혼자서는 안 된다</h3>
+        <p data-en="When the leader turns it into a surface, the follower receives that energy through her palm and arm. What matters is the height. Somewhere between chest and core the leader gathers it slightly toward himself and then moves. The amount is small, but &lt;mark&gt;you have to make her focus first, then go.&lt;/mark&gt; A sudden shove goes nowhere.">리더가 면으로 바꿔 주면 팔로워는 손바닥과 팔로 그 에너지를 받습니다. 중요한 건 높이입니다. 가슴과 코어 사이 어디쯤에서 리더가 자기 쪽으로 살짝 집중시켰다가 움직이죠. 양은 작지만 <mark>집중하게 만든 다음에 가야 합니다.</mark> 갑자기 툭 밀면 가지 않습니다.</p>
         <blockquote class="foll">
-          <p>“손만 밀면 프레임까지만 가기 때문에 안 될 수도 있어요. 이 모먼트에 ‘너를 밀고 싶다’는 바이브를 체스트로 주시는 게 중요합니다.”</p>
-          <cite><b>류지쌤</b>1교시 19:53</cite>
+          <p data-en="“Push only with the hand and it stops at the frame, so it may not work. In that moment it matters that you give the vibe of ‘I want to push you’ through the chest.”">“손만 밀면 프레임까지만 가기 때문에 안 될 수도 있어요. 이 모먼트에 ‘너를 밀고 싶다’는 바이브를 체스트로 주시는 게 중요합니다.”</p>
+          <cite data-en="&lt;b&gt;Ruji&lt;/b&gt;Class 1 · 19:53"><b>류지쌤</b>1교시 19:53</cite>
         </blockquote>
-        <p>팔꿈치가 따로 놀면서 체중이 프레임에 실리지 않으면 결국 손 힘을 쓰게 되고, 손으로 싸우는 모양이 됩니다. 수업 마지막에는 아예 시각을 차단하고 감각만으로 서로의 밀고 당김을 느끼는 연습으로 넘어갑니다.</p>
+        <p data-en="If the elbow drifts on its own and your weight is not loaded into the frame, you end up using hand strength and it turns into fighting with hands. At the end of class, sight is cut off entirely and they practise feeling the push and pull by sensation alone.">팔꿈치가 따로 놀면서 체중이 프레임에 실리지 않으면 결국 손 힘을 쓰게 되고, 손으로 싸우는 모양이 됩니다. 수업 마지막에는 아예 시각을 차단하고 감각만으로 서로의 밀고 당김을 느끼는 연습으로 넘어갑니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">28:27</div>
       <div class="body">
-        <span class="who w-both">콤비네이션</span>
-        <h3>1교시 마무리 시퀀스</h3>
-        <p>배운 것을 하나로 묶습니다. 리더의 왼손을 씁니다.</p>
+        <span class="who w-both" data-en="Combination">콤비네이션</span>
+        <h3 data-en="The closing sequence of class 1">1교시 마무리 시퀀스</h3>
+        <p data-en="Everything so far, tied together. The leader&#x27;s left hand is used.">배운 것을 하나로 묶습니다. 리더의 왼손을 씁니다.</p>
         <ul>
-          <li>리더가 당기면 팔로워의 중심이 오른발로 실리면서 <strong>틸트 턴이 반 바퀴</strong>만 들어갑니다.</li>
-          <li>반대쪽은 무게를 반대로 실어 같은 방식으로.</li>
-          <li>손이 교차되며 모일 때 같이 모으고, 거기서 <strong>헤드롤</strong>로 넘어갑니다.</li>
-          <li>헤드롤 뒤에 다운, 업으로 마무리. <mark>손을 모으는 동작 자체가 끝났다는 신호입니다.</mark></li>
+          <li data-en="The leader pulls, the follower&#x27;s weight loads onto her right foot, and &lt;strong&gt;only half a tilt turn&lt;/strong&gt; goes in.">리더가 당기면 팔로워의 중심이 오른발로 실리면서 <strong>틸트 턴이 반 바퀴</strong>만 들어갑니다.</li>
+          <li data-en="The other side is the same, with the weight loaded the opposite way.">반대쪽은 무게를 반대로 실어 같은 방식으로.</li>
+          <li data-en="As the hands cross and gather, gather them together, and from there move into a &lt;strong&gt;head roll&lt;/strong&gt;.">손이 교차되며 모일 때 같이 모으고, 거기서 <strong>헤드롤</strong>로 넘어갑니다.</li>
+          <li data-en="After the head roll, down, then up to finish. &lt;mark&gt;Gathering the hands is itself the signal that it is over.&lt;/mark&gt;">헤드롤 뒤에 다운, 업으로 마무리. <mark>손을 모으는 동작 자체가 끝났다는 신호입니다.</mark></li>
         </ul>
         <div class="callout">
-          <p class="lab">팔로워가 컨트롤할 지점</p>
-          <p>턴하면서 업 하는 부분은 모두 <strong>체스트의 스트레칭 위치</strong>와 이어집니다. 오른쪽으로 열면 앞쪽과 왼쪽 근육이 늘어나고요. 나머지는 힘을 빼되 움직이지 않는 편이 좋습니다. 그 부분만 움직이는 걸 먼저 익힌 다음에 스타일을 얹으라는 순서입니다.</p>
+          <p class="lab" data-en="What the follower controls">팔로워가 컨트롤할 지점</p>
+          <p data-en="Every part where you rise through the turn ties back to &lt;strong&gt;where the chest is stretched&lt;/strong&gt;. Open right and the front and left muscles lengthen. Everything else stays relaxed but still. Learn to move only that part first, then add style on top.">턴하면서 업 하는 부분은 모두 <strong>체스트의 스트레칭 위치</strong>와 이어집니다. 오른쪽으로 열면 앞쪽과 왼쪽 근육이 늘어나고요. 나머지는 힘을 빼되 움직이지 않는 편이 좋습니다. 그 부분만 움직이는 걸 먼저 익힌 다음에 스타일을 얹으라는 순서입니다.</p>
         </div>
       </div>
     </div>
@@ -641,26 +649,26 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">36:42</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>매너</i></span>
-        <h3>리더가 다 정해 버리면 춤이 재미없다</h3>
-        <p>강의에서 가장 태도에 관한 대목입니다. 리더는 중심 이동만 받쳐 주고, 열 때 오픈 신호, 닫을 때 클로즈 신호만 줍니다. 팔로워의 체스트 가동 범위를 <mark>리더가 물리적으로 다 정해 버리면 안 된다</mark>는 것이죠.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;Manners&lt;/i&gt;"><b>경수쌤</b><i>매너</i></span>
+        <h3 data-en="If the leader decides everything, the dance is not fun">리더가 다 정해 버리면 춤이 재미없다</h3>
+        <p data-en="The most attitude-driven passage in the class. The leader supports only the weight shift, gives an open signal when opening and a close signal when closing. &lt;mark&gt;The leader must not physically decide&lt;/mark&gt; the follower&#x27;s whole range of chest movement.">강의에서 가장 태도에 관한 대목입니다. 리더는 중심 이동만 받쳐 주고, 열 때 오픈 신호, 닫을 때 클로즈 신호만 줍니다. 팔로워의 체스트 가동 범위를 <mark>리더가 물리적으로 다 정해 버리면 안 된다</mark>는 것이죠.</p>
         <blockquote>
-          <p>“레이디가 하기 싫은 이상으로 우리가 춤을 춰버리면 춤이 재밌지 않잖아요. 리더는 중심 위로만 서포트해 주시고, 레이디가 원하는 만큼 해주시면 좋겠습니다.”</p>
-          <cite><b>경수쌤</b>1교시 36:42</cite>
+          <p data-en="“If we dance more than the lady wants to, the dance isn&#x27;t fun, is it. Leaders, support only above the centre, and let the lady do as much as she wants.”">“레이디가 하기 싫은 이상으로 우리가 춤을 춰버리면 춤이 재밌지 않잖아요. 리더는 중심 위로만 서포트해 주시고, 레이디가 원하는 만큼 해주시면 좋겠습니다.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 1 · 36:42"><b>경수쌤</b>1교시 36:42</cite>
         </blockquote>
-        <p>팔로워 쪽에도 짝이 되는 말이 붙습니다 — 편하게 할 수 있는 만큼만 예쁘게. 무리하면 본인도 불편하고 선도 안 예쁩니다.</p>
+        <p data-en="There is a matching line for the follower — only as much as you can do comfortably, done beautifully. Force it and you are uncomfortable and the line is not pretty either.">팔로워 쪽에도 짝이 되는 말이 붙습니다 — 편하게 할 수 있는 만큼만 예쁘게. 무리하면 본인도 불편하고 선도 안 예쁩니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">38:40</div>
       <div class="body">
-        <span class="who w-foll"><b>류지쌤</b><i>이미지</i></span>
-        <h3>헤드는 몸에서 가장 무겁다</h3>
-        <p>류지쌤이 준 가장 좋은 비유입니다. 머리는 몸에서 가장 무거운 부분이라 늘 어딘가로 떨어지려 하는데, <mark class="f">그 떨어지는 방향이 곧 헤드롤입니다.</mark> 한쪽으로 떨어지면 그쪽 근육은 줄고 반대쪽은 늘어나면서, 물이 흐르듯 무거운 쪽으로 계속 흘러갑니다.</p>
+        <span class="who w-foll" data-en="&lt;b&gt;Ruji&lt;/b&gt;&lt;i&gt;Image&lt;/i&gt;"><b>류지쌤</b><i>이미지</i></span>
+        <h3 data-en="The head is the heaviest part of the body">헤드는 몸에서 가장 무겁다</h3>
+        <p data-en="The best image Ruji gives. The head is the heaviest part of the body and is always trying to fall somewhere, and &lt;mark class=&quot;f&quot;&gt;the direction it falls is the head roll.&lt;/mark&gt; Fall to one side and that side shortens while the other lengthens, and it keeps flowing toward the heavy side like water.">류지쌤이 준 가장 좋은 비유입니다. 머리는 몸에서 가장 무거운 부분이라 늘 어딘가로 떨어지려 하는데, <mark class="f">그 떨어지는 방향이 곧 헤드롤입니다.</mark> 한쪽으로 떨어지면 그쪽 근육은 줄고 반대쪽은 늘어나면서, 물이 흐르듯 무거운 쪽으로 계속 흘러갑니다.</p>
         <blockquote class="foll">
-          <p>“홀드하고 바디를 컨트롤하려고 하면 되긴 하지만 불편해요. 근데 비워주면 그쪽으로 알아서 가요. 이렇게 생각하면 훨씬 더 소프트한 리더가 될 수 있어요.”</p>
-          <cite><b>류지쌤</b>1교시 39:30</cite>
+          <p data-en="“You can hold and control the body, but it is uncomfortable. Empty that side and it goes there by itself. Think of it that way and you become a much softer leader.”">“홀드하고 바디를 컨트롤하려고 하면 되긴 하지만 불편해요. 근데 비워주면 그쪽으로 알아서 가요. 이렇게 생각하면 훨씬 더 소프트한 리더가 될 수 있어요.”</p>
+          <cite data-en="&lt;b&gt;Ruji&lt;/b&gt;Class 1 · 39:30"><b>류지쌤</b>1교시 39:30</cite>
         </blockquote>
       </div>
     </div>
@@ -668,23 +676,23 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">44:22</div>
       <div class="body">
-        <span class="who w-warn">안전 · 리듬</span>
-        <h3>팔꿈치는 위로, 그리고 힘을 빼는 순간</h3>
-        <p>부상과 바로 이어지는 대목입니다. <mark>리더는 팔꿈치를 위로 두고 손가락은 위에서 아래로, 손 위치는 항상 수직입니다.</mark> 팔로워는 힘을 빼되 특히 고개를 숙이지 않아야 합니다. 왼손이 보이는 지점에서 고개를 숙여 버리는 것이 가장 흔한 부상 경로입니다. 무섭더라도 파트너를 믿어야 하고요 — 움츠러들기 시작하면 턴 자체가 진행되지 않습니다.</p>
-        <p>이어서 리드의 리듬 이야기가 나옵니다. 포인트에 도달해 웨이트 체인지로 중심을 살려 주면 팔로워가 출발합니다. 그 뒤에는 에너지만큼 알아서 가니 <strong>손의 텐션을 빼 줘야</strong> 합니다. 계속 팔에 힘을 주고 있으면 팔로워의 하체에도 계속 힘이 들어갑니다. <mark>포인트와 릴렉스가 번갈아 오는 것, 그것이 리듬입니다.</mark></p>
+        <span class="who w-warn" data-en="Safety · Rhythm">안전 · 리듬</span>
+        <h3 data-en="Elbows up — and the moment you let go">팔꿈치는 위로, 그리고 힘을 빼는 순간</h3>
+        <p data-en="This is the passage that leads straight to injury. &lt;mark&gt;The leader keeps his elbow up, fingers pointing from above downward, hand always vertical.&lt;/mark&gt; The follower stays soft but above all must not drop her head. Dropping the head at the point where the left hand becomes visible is the most common route to injury. And frightening as it is, you have to trust your partner — start shrinking away and the turn cannot happen at all.">부상과 바로 이어지는 대목입니다. <mark>리더는 팔꿈치를 위로 두고 손가락은 위에서 아래로, 손 위치는 항상 수직입니다.</mark> 팔로워는 힘을 빼되 특히 고개를 숙이지 않아야 합니다. 왼손이 보이는 지점에서 고개를 숙여 버리는 것이 가장 흔한 부상 경로입니다. 무섭더라도 파트너를 믿어야 하고요 — 움츠러들기 시작하면 턴 자체가 진행되지 않습니다.</p>
+        <p data-en="Then comes the rhythm of the lead. You reach the point, activate the centre with a weight change, and the follower departs. After that she travels as far as the energy carries, so &lt;strong&gt;you must release the tension in the hand&lt;/strong&gt;. Keep force in the arm and force stays in her legs too. &lt;mark&gt;Point and release, alternating — that is the rhythm.&lt;/mark&gt;">이어서 리드의 리듬 이야기가 나옵니다. 포인트에 도달해 웨이트 체인지로 중심을 살려 주면 팔로워가 출발합니다. 그 뒤에는 에너지만큼 알아서 가니 <strong>손의 텐션을 빼 줘야</strong> 합니다. 계속 팔에 힘을 주고 있으면 팔로워의 하체에도 계속 힘이 들어갑니다. <mark>포인트와 릴렉스가 번갈아 오는 것, 그것이 리듬입니다.</mark></p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">49:22</div>
       <div class="body">
-        <span class="who w-both">구조</span>
-        <h3>패턴은 사실 다 똑같다</h3>
-        <p>겉보기에 달라 보이는 패턴들도 안에 든 내용은 거의 같습니다. 핸즈가 조금 달라지고, 로테서리가 하나 들어가고, 한 바퀴가 한 바퀴 반이 되는 식으로 요소가 붙으며 길어질 뿐이죠. 설계의 뼈대가 되는 규칙은 <mark>대칭적 이동</mark>입니다.</p>
+        <span class="who w-both" data-en="Structure">구조</span>
+        <h3 data-en="The patterns are all the same, really">패턴은 사실 다 똑같다</h3>
+        <p data-en="Patterns that look different hold almost the same content. The hands change a little, a rotisserie goes in, one turn becomes one and a half — elements are added and it gets longer. The rule underneath the design is &lt;mark&gt;symmetrical travel&lt;/mark&gt;.">겉보기에 달라 보이는 패턴들도 안에 든 내용은 거의 같습니다. 핸즈가 조금 달라지고, 로테서리가 하나 들어가고, 한 바퀴가 한 바퀴 반이 되는 식으로 요소가 붙으며 길어질 뿐이죠. 설계의 뼈대가 되는 규칙은 <mark>대칭적 이동</mark>입니다.</p>
         <div class="counts">
-          <span class="ct mid">L 오픈</span><span class="ct">틸트</span><span class="ct">헤드롤</span><span class="ct">틸트</span><span class="ct mid">R 오픈</span><span class="ct">로테서리</span>
+          <span class="ct mid" data-en="L open">L 오픈</span><span class="ct" data-en="Tilt">틸트</span><span class="ct" data-en="Head roll">헤드롤</span><span class="ct" data-en="Tilt">틸트</span><span class="ct mid" data-en="R open">R 오픈</span><span class="ct" data-en="Rotisserie">로테서리</span>
         </div>
-        <p>왼쪽 오픈과 오른쪽 오픈을 계속 오가는 것이 뼈대이고, 그 사이사이에 원하는 요소를 끼워 넣습니다. 무브가 헷갈릴 때 이 규칙을 알고 있으면 리더가 왔다 갔다 하는 구조가 읽힙니다.</p>
+        <p data-en="Going back and forth between a left open and a right open is the skeleton, and you slot whatever you want in between. Knowing this rule makes the leader&#x27;s back-and-forth readable when a move confuses you.">왼쪽 오픈과 오른쪽 오픈을 계속 오가는 것이 뼈대이고, 그 사이사이에 원하는 요소를 끼워 넣습니다. 무브가 헷갈릴 때 이 규칙을 알고 있으면 리더가 왔다 갔다 하는 구조가 읽힙니다.</p>
       </div>
     </div>
 
@@ -695,9 +703,9 @@ a{color:var(--gold)}
 <section id="c2">
   <div class="classbar rv">
     <p class="no">Class Two</p>
-    <h2>로테서리 조립</h2>
-    <div class="meta"><span class="tag">41:56</span><span class="tag">20:19 시작</span><span class="tag">심화 · 콤비네이션</span></div>
-    <p class="thesis">1교시의 원리들을 긴 콤비네이션 하나로 엮습니다. 새로 나오는 개념은 둘뿐 — 리버스, 그리고 로테서리. 나머지는 모두 1교시의 응용입니다.</p>
+    <h2 data-en="Assembling the rotisserie">로테서리 조립</h2>
+    <div class="meta"><span class="tag">41:56</span><span class="tag" data-en="Started 20:19">20:19 시작</span><span class="tag" data-en="Advanced · Combination">심화 · 콤비네이션</span></div>
+    <p class="thesis" data-en="Class 1&#x27;s principles get threaded into one long combination. Only two new ideas appear — reverse, and rotisserie. Everything else is class 1 applied.">1교시의 원리들을 긴 콤비네이션 하나로 엮습니다. 새로 나오는 개념은 둘뿐 — 리버스, 그리고 로테서리. 나머지는 모두 1교시의 응용입니다.</p>
   </div>
 
   <div class="tl">
@@ -705,22 +713,22 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">00:10</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>리더</i></span>
-        <h3>턴과 체스트는 별개다</h3>
-        <p>2교시의 문을 여는 개념입니다. 준비하고 임펄스를 주면 턴은 이미 끝난 것이고, 그다음부터 체스트를 여닫는 건 손 높이가 맡습니다. 오픈할 때 리더도 같이 프레임을 열어 준 상태여야 하고, 그러면 손 위치가 자연히 높아집니다. 그 상태를 유지하면 팔로워의 체스트 레벨도 유지되고, 가다가 손을 내리면 중립으로, 더 내리면 클로즈로 갑니다.</p>
-        <p>그래서 나갈 때는 힙 턴을 유지하다가 손을 내려 줘야 팔로워가 느끼면서 닫힙니다. 리더가 “돌린다”고 생각하지 않는 것이 요령이고요. 팔로워 쪽 숙제도 분명합니다 — <mark class="f">리더의 손 높이를 느낄 줄 알아야</mark> 합니다. 아무 반응 없이 있으면 리더에게도 전해지지 않으니, 늘 약간의 긴장감을 쥐고 있어야 합니다.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;Leader&lt;/i&gt;"><b>경수쌤</b><i>리더</i></span>
+        <h3 data-en="The turn and the chest are separate">턴과 체스트는 별개다</h3>
+        <p data-en="The idea that opens class 2. Prepare, give the impulse, and the turn is already done; from there the chest opening and closing is handled by hand height. When you open, the leader has to be opening his frame too, which naturally puts his hand high. Hold that and the follower&#x27;s chest level holds; lower the hand along the way and it goes neutral, lower it further and it closes.">2교시의 문을 여는 개념입니다. 준비하고 임펄스를 주면 턴은 이미 끝난 것이고, 그다음부터 체스트를 여닫는 건 손 높이가 맡습니다. 오픈할 때 리더도 같이 프레임을 열어 준 상태여야 하고, 그러면 손 위치가 자연히 높아집니다. 그 상태를 유지하면 팔로워의 체스트 레벨도 유지되고, 가다가 손을 내리면 중립으로, 더 내리면 클로즈로 갑니다.</p>
+        <p data-en="So on the way out you hold the hip turn and then lower the hand, and she feels it and closes. The trick is for the leader not to think “I am turning her.” The follower&#x27;s homework is just as clear — &lt;mark class=&quot;f&quot;&gt;she has to be able to feel the leader&#x27;s hand height.&lt;/mark&gt; With no response at all nothing reaches the leader either, so keep a little tension at all times.">그래서 나갈 때는 힙 턴을 유지하다가 손을 내려 줘야 팔로워가 느끼면서 닫힙니다. 리더가 “돌린다”고 생각하지 않는 것이 요령이고요. 팔로워 쪽 숙제도 분명합니다 — <mark class="f">리더의 손 높이를 느낄 줄 알아야</mark> 합니다. 아무 반응 없이 있으면 리더에게도 전해지지 않으니, 늘 약간의 긴장감을 쥐고 있어야 합니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">03:44</div>
       <div class="body">
-        <span class="who w-foll"><b>류지쌤</b><i>팔로워</i></span>
-        <h3>웨이트 체인징 — 언제까지 가야 하나</h3>
-        <p>웨이트 체인징은 어떤 방향으로든 에너지를 줘서 이동을 만드는 것입니다. 팔로워는 그 방향으로 갑니다. 언제까지냐면 <mark class="f">에너지가 끝날 때까지, 또는 못 가게 막힐 때까지</mark>입니다. 가는 동안 엉덩이가 계속 그 방향으로 가고, 에너지는 코어로 계속 보냅니다.</p>
+        <span class="who w-foll" data-en="&lt;b&gt;Ruji&lt;/b&gt;&lt;i&gt;Follower&lt;/i&gt;"><b>류지쌤</b><i>팔로워</i></span>
+        <h3 data-en="Weight changing — how far do you go?">웨이트 체인징 — 언제까지 가야 하나</h3>
+        <p data-en="Weight changing means giving energy in some direction to create travel. The follower goes that way. Until when? &lt;mark class=&quot;f&quot;&gt;Until the energy runs out, or until something blocks her.&lt;/mark&gt; Her hips keep going that way as she travels, and the energy keeps being sent to the core.">웨이트 체인징은 어떤 방향으로든 에너지를 줘서 이동을 만드는 것입니다. 팔로워는 그 방향으로 갑니다. 언제까지냐면 <mark class="f">에너지가 끝날 때까지, 또는 못 가게 막힐 때까지</mark>입니다. 가는 동안 엉덩이가 계속 그 방향으로 가고, 에너지는 코어로 계속 보냅니다.</p>
         <div class="callout">
-          <p class="lab">한 번에 하나씩</p>
-          <p><mark>움직이는 중에는 헤드를 쓰지 않습니다. 스텝이 끝났을 때 헤드가 움직이기 시작하고</mark>, 반대로 갈 때도 마찬가지입니다. 이 순서가 2교시 콤비네이션 전체의 뼈대가 됩니다.</p>
+          <p class="lab" data-en="One thing at a time">한 번에 하나씩</p>
+          <p data-en="&lt;mark&gt;You do not use the head while moving. The head starts moving when the step finishes&lt;/mark&gt;, and the same going the other way. This order is the skeleton of the whole class 2 combination."><mark>움직이는 중에는 헤드를 쓰지 않습니다. 스텝이 끝났을 때 헤드가 움직이기 시작하고</mark>, 반대로 갈 때도 마찬가지입니다. 이 순서가 2교시 콤비네이션 전체의 뼈대가 됩니다.</p>
         </div>
       </div>
     </div>
@@ -728,33 +736,33 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">05:54</div>
       <div class="body">
-        <span class="who w-both">연습</span>
-        <h3>중심 이동만으로 팔로워를 보낼 수 있는가</h3>
-        <p>베이직에서 왼손으로 열어 프레첼 형태를 만듭니다. 이 연습의 목적은 하나예요 — 이 프레임 안에서 리더가 <mark>오직 중심 이동만으로</mark> 팔로워를 보낼 수 있는지 보는 것입니다. 이어서 왼손 없이 같은 것을 해 보는데, 중심 이동만으로 당기면 팔로워가 한 번에 들어옵니다.</p>
-        <p>여기서 짚어 주는 것이 팔로워의 첫 발입니다. 카운트 1에서 오른발을 짚는 순간이 예뻐야 하고, 그 모멘텀에서 두 사람이 같이 움직여야 합니다. 이게 애매하면 리버스로 빠지게 되는데, 그게 바로 다음 개념입니다.</p>
+        <span class="who w-both" data-en="Drill">연습</span>
+        <h3 data-en="Can you send the follower on the weight shift alone?">중심 이동만으로 팔로워를 보낼 수 있는가</h3>
+        <p data-en="From the basic you open with the left hand into a pretzel shape. This drill has one purpose — to see whether the leader can send the follower &lt;mark&gt;on the weight shift alone&lt;/mark&gt; inside this frame. Then the same thing without the left hand: pull on the weight shift only and she comes in at once.">베이직에서 왼손으로 열어 프레첼 형태를 만듭니다. 이 연습의 목적은 하나예요 — 이 프레임 안에서 리더가 <mark>오직 중심 이동만으로</mark> 팔로워를 보낼 수 있는지 보는 것입니다. 이어서 왼손 없이 같은 것을 해 보는데, 중심 이동만으로 당기면 팔로워가 한 번에 들어옵니다.</p>
+        <p data-en="What gets pointed out here is the follower&#x27;s first step. The moment she places her right foot on count 1 has to be beautiful, and both people have to move together on that momentum. When it is vague you fall into a reverse — which is the next idea.">여기서 짚어 주는 것이 팔로워의 첫 발입니다. 카운트 1에서 오른발을 짚는 순간이 예뻐야 하고, 그 모멘텀에서 두 사람이 같이 움직여야 합니다. 이게 애매하면 리버스로 빠지게 되는데, 그게 바로 다음 개념입니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">10:50</div>
       <div class="body">
-        <span class="who w-lead">새 개념</span>
-        <h3>리버스 — 가던 길을 꺾는다</h3>
-        <p><mark>팔로워가 가던 방향을 살짝 꺾어 뒤로 돌리는 것입니다.</mark> 리더가 살짝 반대로 하면서 백스텝을 밟으면 팔로워에게 블록이 걸리며 뒤쪽으로 가게 되고, 회전하면서 중심의 방향이 바뀝니다. 마지막에 반대쪽이 늘어나며 텐션이 걸리고, 그것을 풀면서 다음 동작으로 넘어가죠.</p>
+        <span class="who w-lead" data-en="New idea">새 개념</span>
+        <h3 data-en="Reverse — bending the path she was on">리버스 — 가던 길을 꺾는다</h3>
+        <p data-en="&lt;mark&gt;Bending the direction the follower was travelling and turning her back.&lt;/mark&gt; The leader goes slightly against it and takes a back step, she gets blocked and travels backward, and the direction of the centre changes as she rotates. At the end the far side lengthens and tension loads, and releasing it carries you into the next move."><mark>팔로워가 가던 방향을 살짝 꺾어 뒤로 돌리는 것입니다.</mark> 리더가 살짝 반대로 하면서 백스텝을 밟으면 팔로워에게 블록이 걸리며 뒤쪽으로 가게 되고, 회전하면서 중심의 방향이 바뀝니다. 마지막에 반대쪽이 늘어나며 텐션이 걸리고, 그것을 풀면서 다음 동작으로 넘어가죠.</p>
         <blockquote>
-          <p>“처음에 중심이 안 걸리면 뒤에부터 잘 안 걸리는 거거든요. 시작하는 에너지가 항상 매우 중요합니다.”</p>
-          <cite><b>경수쌤</b>2교시 13:02</cite>
+          <p data-en="“If the centre doesn&#x27;t catch at the start, nothing catches from there on. The starting energy is always very important.”">“처음에 중심이 안 걸리면 뒤에부터 잘 안 걸리는 거거든요. 시작하는 에너지가 항상 매우 중요합니다.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 2 · 13:02"><b>경수쌤</b>2교시 13:02</cite>
         </blockquote>
-        <p>리더에게 붙는 조언 하나 — 어려우면 자기 스텝보다 팔로워에게 집중하세요. 내 스텝은 좀 띄워도 괜찮습니다.</p>
+        <p data-en="One note for leaders — if it is hard, focus on the follower rather than on your own step. Your own step can float a little.">리더에게 붙는 조언 하나 — 어려우면 자기 스텝보다 팔로워에게 집중하세요. 내 스텝은 좀 띄워도 괜찮습니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">14:16</div>
       <div class="body">
-        <span class="who w-both">공간</span>
-        <h3>헤드 무브가 공간을 많이 먹는다는 건 오해</h3>
-        <p>이날 강의실이 좁아서 나온 이야기인데 내용 자체가 중요합니다. 공간을 쓰는 방식이 둘로 갈립니다. 리더가 제자리에서 리드하면 롱 라인이 아름답지만 공간을 많이 쓰고, 서로 위치를 교환하면 원형 에너지로 방향을 계속 바꾸면서 작은 공간에서도 같은 춤이 나옵니다.</p>
+        <span class="who w-both" data-en="Space">공간</span>
+        <h3 data-en="“Head movement eats a lot of space” is a misconception">헤드 무브가 공간을 많이 먹는다는 건 오해</h3>
+        <p data-en="It came up because the room was tight that day, but the content matters on its own. There are two ways to use space. The leader leading on the spot gives beautiful long lines but eats a lot of room; exchanging places uses circular energy to keep changing direction, and the same dance fits into a small space.">이날 강의실이 좁아서 나온 이야기인데 내용 자체가 중요합니다. 공간을 쓰는 방식이 둘로 갈립니다. 리더가 제자리에서 리드하면 롱 라인이 아름답지만 공간을 많이 쓰고, 서로 위치를 교환하면 원형 에너지로 방향을 계속 바꾸면서 작은 공간에서도 같은 춤이 나옵니다.</p>
 
         
       </div>
@@ -763,16 +771,16 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">15:56</div>
       <div class="body">
-        <span class="who w-both">타이밍 · 그립</span>
-        <h3>준비는 7·8에, 무브는 1에서</h3>
+        <span class="who w-both" data-en="Timing · Grip">타이밍 · 그립</span>
+        <h3 data-en="Prepare on 7·8, start the move on 1">준비는 7·8에, 무브는 1에서</h3>
         <div class="counts">
           <span class="ct">5</span><span class="ct">6</span><span class="ct mid">7</span><span class="ct mid">8</span><span class="ct hot">1</span><span class="ct">2</span><span class="ct">3</span><span class="ct">4</span>
         </div>
-        <p><mark>7·8에서 체스트 오픈 프레임을 만들고 1에서 무브를 시작합니다.</mark> 예전에는 1·2에서 열었지만 여기서는 3·4에 보여 주는 구조로 바뀝니다. 리더의 체스트가 닫혀 있으면 팔로워는 그냥 외워서 하고 있는 것이니, 리더도 같이 열어 줘야 합니다.</p>
-        <p>그리고 <em>컨트랙션은 살짝이라도 반드시 있어야</em> 합니다. 클로즈 없이 오픈만 하면 팔로워가 느낄 수가 없거든요. 그래서 연습할 때는 과장해서, 천천히 합니다. 자세도 함께 봐 줍니다 — 팔꿈치는 바깥으로, 엄지는 펴고, 손목은 꺾지 않기. 손목으로 뭔가를 들려고 하면 관절이 꺾이며 에너지가 중간에 사라집니다.</p>
+        <p data-en="&lt;mark&gt;Build the chest-open frame on 7·8 and start the move on 1.&lt;/mark&gt; It used to open on 1·2; here the structure shifts to presenting on 3·4. If the leader&#x27;s chest is closed, the follower is just running from memory — the leader has to open with her."><mark>7·8에서 체스트 오픈 프레임을 만들고 1에서 무브를 시작합니다.</mark> 예전에는 1·2에서 열었지만 여기서는 3·4에 보여 주는 구조로 바뀝니다. 리더의 체스트가 닫혀 있으면 팔로워는 그냥 외워서 하고 있는 것이니, 리더도 같이 열어 줘야 합니다.</p>
+        <p data-en="And &lt;em&gt;there must always be at least a small contraction&lt;/em&gt;. Open without closing and the follower cannot feel it. So in practice you exaggerate it and go slowly. Posture gets checked too — elbows out, thumb extended, wrist not bent. Try to lift something with the wrist and the joint folds and the energy disappears halfway.">그리고 <em>컨트랙션은 살짝이라도 반드시 있어야</em> 합니다. 클로즈 없이 오픈만 하면 팔로워가 느낄 수가 없거든요. 그래서 연습할 때는 과장해서, 천천히 합니다. 자세도 함께 봐 줍니다 — 팔꿈치는 바깥으로, 엄지는 펴고, 손목은 꺾지 않기. 손목으로 뭔가를 들려고 하면 관절이 꺾이며 에너지가 중간에 사라집니다.</p>
         <div class="callout">
-          <p class="lab">리더가 가장 많이 하는 실수</p>
-          <p>3·4에 빨리 닿고 싶어서 앞을 너무 서두릅니다. 그 전부터 팔로워가 따라올 수 있게 천천히 바이브를 줘야 거기서 잘 먹힙니다.</p>
+          <p class="lab" data-en="The mistake leaders make most">리더가 가장 많이 하는 실수</p>
+          <p data-en="They rush the front because they want to reach 3·4 quickly. You have to give the vibe slowly from before so the follower can come with you — that is what makes it land there.">3·4에 빨리 닿고 싶어서 앞을 너무 서두릅니다. 그 전부터 팔로워가 따라올 수 있게 천천히 바이브를 줘야 거기서 잘 먹힙니다.</p>
         </div>
       </div>
     </div>
@@ -780,14 +788,14 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">21:29</div>
       <div class="body">
-        <span class="who w-both">새 개념</span>
-        <h3>로테서리 — 헤드를 한 방향에 남긴다</h3>
-        <p>2교시의 주인공입니다. 오픈한 다음 팔로워에게 레프트 턴을 거는데, 체스트를 연 상태에서 리더의 손을 팔로워 쪽이 아니라 <mark>대각선 뒤쪽으로 보냅니다. 그러면 헤드가 뒤쪽에 남습니다.</mark></p>
+        <span class="who w-both" data-en="New idea">새 개념</span>
+        <h3 data-en="Rotisserie — leaving the head in one direction">로테서리 — 헤드를 한 방향에 남긴다</h3>
+        <p data-en="The centrepiece of class 2. After opening you put the follower into a left turn, but with the chest open the leader sends his hand &lt;mark&gt;diagonally behind her rather than toward her. The head then stays behind.&lt;/mark&gt;">2교시의 주인공입니다. 오픈한 다음 팔로워에게 레프트 턴을 거는데, 체스트를 연 상태에서 리더의 손을 팔로워 쪽이 아니라 <mark>대각선 뒤쪽으로 보냅니다. 그러면 헤드가 뒤쪽에 남습니다.</mark></p>
         <blockquote>
-          <p>“우리 길거리에 있는 치킨처럼 헤드가 고정돼 있는 거를 <strong>로스트 치킨 무브</strong>라고 해요. 방향은 리더가 결정하는 거예요. 내가 뒤로 꼬치를 꽂으면 뒤쪽으로 꽂힌 로스트 치킨이 되는 거고요.”</p>
-          <cite><b>경수쌤</b>2교시 23:25</cite>
+          <p data-en="“A head fixed in place like the rotisserie chicken on the street — we call it the roast chicken move. The leader decides the direction. If I stick the skewer in from behind, it becomes a roast chicken skewered from behind.”">“우리 길거리에 있는 치킨처럼 헤드가 고정돼 있는 거를 <strong>로스트 치킨 무브</strong>라고 해요. 방향은 리더가 결정하는 거예요. 내가 뒤로 꼬치를 꽂으면 뒤쪽으로 꽂힌 로스트 치킨이 되는 거고요.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;Class 2 · 23:25"><b>경수쌤</b>2교시 23:25</cite>
         </blockquote>
-        <p>방향은 앞이든 뒤든 왼쪽이든 상관없습니다. <strong>축이 유지되는 것</strong>이 이 무브의 정의이고, 그 축의 방향을 리더가 정합니다. 이 대목도 사진을 붙이지 않았습니다 — <strong>머리가 한쪽에 남아 있는지</strong>는 도는 동안을 봐야 알 수 있고, 영상에서 그 순간을 특정할 방법이 없기 때문입니다.</p>
+        <p data-en="The direction does not matter — front, back, left. &lt;strong&gt;The axis holding&lt;/strong&gt; is what defines this move, and the leader sets that axis. No photo is attached here either — &lt;strong&gt;whether the head stays on one side&lt;/strong&gt; can only be seen across the turn, and there is no way to pin down that moment in the footage.">방향은 앞이든 뒤든 왼쪽이든 상관없습니다. <strong>축이 유지되는 것</strong>이 이 무브의 정의이고, 그 축의 방향을 리더가 정합니다. 이 대목도 사진을 붙이지 않았습니다 — <strong>머리가 한쪽에 남아 있는지</strong>는 도는 동안을 봐야 알 수 있고, 영상에서 그 순간을 특정할 방법이 없기 때문입니다.</p>
 
         
       </div>
@@ -796,9 +804,9 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">25:04</div>
       <div class="body">
-        <span class="who w-lead"><b>경수쌤</b><i>리더</i></span>
-        <h3>수직 리드와 수평 리드</h3>
-        <p>2교시에서 가장 정밀한 대목이고, 어긋나면 동작 자체가 성립하지 않는 지점입니다. <mark>로테서리는 수직 리드</mark>입니다. 손이 올라갔다 내려오죠. 그래야 체스트가 유지되면서 턴이 들어갑니다. 반면 <strong>수평 리드</strong>를 하면 팔로워의 체스트가 계속 열리고 닫히는데, 그건 틸트 턴 계열의 리드입니다. 경수쌤은 “손이 올라갔다가 내려가는 거예요”라고 손동작으로 수직을 설명하고, 수평 쪽은 <strong>“수평”·“평행”</strong>이라는 말로 짚습니다. 이 대목은 사진을 붙이지 않았습니다 — <strong>손이 지나간 길</strong>은 정지 사진 한 장에 담기지 않고, 영상의 어느 순간이 이 리드였는지 확인할 방법도 없기 때문입니다.</p>
+        <span class="who w-lead" data-en="&lt;b&gt;Soo&lt;/b&gt;&lt;i&gt;Leader&lt;/i&gt;"><b>경수쌤</b><i>리더</i></span>
+        <h3 data-en="Vertical lead and horizontal lead">수직 리드와 수평 리드</h3>
+        <p data-en="The most precise passage in class 2, and the point where a mismatch stops the move from working at all. &lt;mark&gt;The rotisserie is a vertical lead.&lt;/mark&gt; The hand rises and falls. That is what keeps the chest held while the turn goes in. A &lt;strong&gt;horizontal lead&lt;/strong&gt;, by contrast, keeps opening and closing the follower&#x27;s chest — that belongs to the tilt-turn family. Soo explains vertical with his hand — “the hand goes up and then down” — and points at the other one with the Korean words &lt;strong&gt;“horizontal” and “parallel.”&lt;/strong&gt; No photo is attached here — &lt;strong&gt;the path the hand travels&lt;/strong&gt; does not fit in one still frame, and there is no way to confirm which moment in the footage was this lead.">2교시에서 가장 정밀한 대목이고, 어긋나면 동작 자체가 성립하지 않는 지점입니다. <mark>로테서리는 수직 리드</mark>입니다. 손이 올라갔다 내려오죠. 그래야 체스트가 유지되면서 턴이 들어갑니다. 반면 <strong>수평 리드</strong>를 하면 팔로워의 체스트가 계속 열리고 닫히는데, 그건 틸트 턴 계열의 리드입니다. 경수쌤은 “손이 올라갔다가 내려가는 거예요”라고 손동작으로 수직을 설명하고, 수평 쪽은 <strong>“수평”·“평행”</strong>이라는 말로 짚습니다. 이 대목은 사진을 붙이지 않았습니다 — <strong>손이 지나간 길</strong>은 정지 사진 한 장에 담기지 않고, 영상의 어느 순간이 이 리드였는지 확인할 방법도 없기 때문입니다.</p>
 
         
       </div>
@@ -807,50 +815,50 @@ a{color:var(--gold)}
     <div class="item rv">
       <div class="tc">28:15</div>
       <div class="body">
-        <span class="who w-both">콤비네이션</span>
-        <h3>완성 시퀀스 — 리더의 3단 리드</h3>
-        <p>조각들을 하나로 묶습니다. 체스트가 열리고, 그 텐션으로 <strong>로테서리를 반만</strong> 쓴 뒤, 손이 뒤로 말리면서 다시 열립니다. 헤드를 반대쪽으로 꺾어 버리기 때문에 그대로 틸트로 들어가며 열리죠. <mark>리더가 기억할 것은 리드의 방향이 세 번 바뀐다는 사실입니다.</mark></p>
+        <span class="who w-both" data-en="Combination">콤비네이션</span>
+        <h3 data-en="The finished sequence — the leader&#x27;s three-stage lead">완성 시퀀스 — 리더의 3단 리드</h3>
+        <p data-en="The pieces, tied together. The chest opens; on that tension you use &lt;strong&gt;only half a rotisserie&lt;/strong&gt;; then the hand rolls back and it opens again. Because the head is snapped to the other side, it goes straight into a tilt and opens. &lt;mark&gt;What the leader has to remember is that the direction of the lead changes three times.&lt;/mark&gt;">조각들을 하나로 묶습니다. 체스트가 열리고, 그 텐션으로 <strong>로테서리를 반만</strong> 쓴 뒤, 손이 뒤로 말리면서 다시 열립니다. 헤드를 반대쪽으로 꺾어 버리기 때문에 그대로 틸트로 들어가며 열리죠. <mark>리더가 기억할 것은 리드의 방향이 세 번 바뀐다는 사실입니다.</mark></p>
         <div class="tw">
           <table>
-            <thead><tr><th>순서</th><th>리드 방향</th><th>일어나는 일</th></tr></thead>
+            <thead><tr><th data-en="Order">순서</th><th data-en="Lead direction">리드 방향</th><th data-en="What happens">일어나는 일</th></tr></thead>
             <tbody>
-              <tr><td>첫 번째</td><td class="mono">수직</td><td>로테서리 — 헤드 축이 고정된 채 몸이 돌아간다</td></tr>
-              <tr><td>두 번째</td><td class="mono">수평</td><td>손이 뒤로 말리며 체스트가 다시 열린다</td></tr>
-              <tr><td>세 번째</td><td class="mono">DOWN → OPEN</td><td>내렸다가 다시 열어 마무리로 연결한다</td></tr>
+              <tr><td data-en="First">첫 번째</td><td class="mono" data-en="Vertical">수직</td><td data-en="Rotisserie — the body turns while the head axis stays fixed">로테서리 — 헤드 축이 고정된 채 몸이 돌아간다</td></tr>
+              <tr><td data-en="Second">두 번째</td><td class="mono" data-en="Horizontal">수평</td><td data-en="The hand rolls back and the chest opens again">손이 뒤로 말리며 체스트가 다시 열린다</td></tr>
+              <tr><td data-en="Third">세 번째</td><td class="mono">DOWN → OPEN</td><td data-en="Lower it, open it again, and connect into the finish">내렸다가 다시 열어 마무리로 연결한다</td></tr>
             </tbody>
           </table>
         </div>
-        <p>팔로워는 같은 시퀀스를 <strong>업 → 스테핑 → 바운스와 헤드</strong> 세 단계로 기억합니다. 스테핑 구간에서는 헤드를 쓰지 않고, 마지막에 막혔을 때 바운스가 생기며 헤드가 움직입니다.</p>
+        <p data-en="The follower remembers the same sequence in three stages — &lt;strong&gt;up → stepping → bounce and head&lt;/strong&gt;. No head during the stepping section; when it is blocked at the end a bounce appears and the head moves.">팔로워는 같은 시퀀스를 <strong>업 → 스테핑 → 바운스와 헤드</strong> 세 단계로 기억합니다. 스테핑 구간에서는 헤드를 쓰지 않고, 마지막에 막혔을 때 바운스가 생기며 헤드가 움직입니다.</p>
         <blockquote class="foll">
-          <p>“헤드가 움직이면 우리 엉덩이가 같이 이동해요. 얘를 스탠딩이 버텨줘야 되니까. 마지막에 바운스를 붙일 때 상체만 가시는 게 아니라 바운스하고 엉덩이로 같이.”</p>
-          <cite><b>류지쌤</b>2교시 32:12</cite>
+          <p data-en="“When the head moves our hips travel with it, because the standing leg has to hold it. So when you add the bounce at the end, it isn&#x27;t just the upper body going — it&#x27;s the bounce and the hips together.”">“헤드가 움직이면 우리 엉덩이가 같이 이동해요. 얘를 스탠딩이 버텨줘야 되니까. 마지막에 바운스를 붙일 때 상체만 가시는 게 아니라 바운스하고 엉덩이로 같이.”</p>
+          <cite data-en="&lt;b&gt;Ruji&lt;/b&gt;Class 2 · 32:12"><b>류지쌤</b>2교시 32:12</cite>
         </blockquote>
-        <p>연습은 쪼개서 합니다. 팔로워를 헤드롤로 뒤쪽에 아주 살짝 보내 두고, 헤드를 고정한 채 뒤쪽으로 로테이션을 조금 말아 봅니다. 리더의 왼손은 팔로워의 체스트나 숄더 라인쯤에 두고 체스트를 굴린 다음, 아래로 내려 사이드로 뺍니다. 마지막 순간에는 손가락 하나만 걸친 채 끝까지 가면서 다리가 지나갈 공간을 내주고요.</p>
+        <p data-en="Practise it in pieces. Send the follower very slightly back with a head roll, hold the head, and roll the rotation back a little. The leader&#x27;s left hand sits around her chest or shoulder line, rolls the chest, then lowers and takes it out to the side. In the last instant he keeps only one finger hooked all the way through, opening room for her leg to pass.">연습은 쪼개서 합니다. 팔로워를 헤드롤로 뒤쪽에 아주 살짝 보내 두고, 헤드를 고정한 채 뒤쪽으로 로테이션을 조금 말아 봅니다. 리더의 왼손은 팔로워의 체스트나 숄더 라인쯤에 두고 체스트를 굴린 다음, 아래로 내려 사이드로 뺍니다. 마지막 순간에는 손가락 하나만 걸친 채 끝까지 가면서 다리가 지나갈 공간을 내주고요.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">34:59</div>
       <div class="body">
-        <span class="who w-both">타이밍</span>
-        <h3>패턴이 길어졌으니 피니시를 늦춘다</h3>
-        <p>무브가 하나 더 들어갔으니 박자가 밀립니다. 그래서 피니시 타이밍 자체를 옮깁니다.</p>
+        <span class="who w-both" data-en="Timing">타이밍</span>
+        <h3 data-en="The pattern got longer, so the finish moves later">패턴이 길어졌으니 피니시를 늦춘다</h3>
+        <p data-en="One more move went in, so the beat pushes back. So the finish timing itself is moved.">무브가 하나 더 들어갔으니 박자가 밀립니다. 그래서 피니시 타이밍 자체를 옮깁니다.</p>
         <div class="counts">
           <span class="ct">5</span><span class="ct">6</span><span class="ct mid">7</span><span class="ct mid">8</span><span class="ct hot">1</span><span class="ct">2</span><span class="ct mid">3</span><span class="ct mid">4</span>
         </div>
-        <p>7·8에서 컨트랙션, 1에서 열며 피니시. 1의 베이직을 잃었으니 3·4에서 스텝으로 채웁니다. 카운트를 늦추면서도 <mark>피니시는 늘 1에서</mark> 하고, 잃어버린 베이직은 뒤의 스텝으로 회수하는 구조죠. 무브를 더 넣고 싶을 때 두루 쓰는 원리입니다.</p>
-        <p>덧붙여, 핸드 체인지는 무브가 다 끝나고 하는 편이 좋습니다. 연습이 안 된 상태에서 중간에 바꾸면 흐름이 끊기거든요. 스타일링할 때는 상체를 접지 말고 세운 채로 — 업다운은 괜찮습니다.</p>
+        <p data-en="Contraction on 7·8, open and finish on 1. You lost the basic on 1, so you fill it with a step on 3·4. You keep delaying the count but &lt;mark&gt;the finish is always on 1&lt;/mark&gt;, and the lost basic is recovered by the step behind it. It is a general principle for whenever you want to fit another move in.">7·8에서 컨트랙션, 1에서 열며 피니시. 1의 베이직을 잃었으니 3·4에서 스텝으로 채웁니다. 카운트를 늦추면서도 <mark>피니시는 늘 1에서</mark> 하고, 잃어버린 베이직은 뒤의 스텝으로 회수하는 구조죠. 무브를 더 넣고 싶을 때 두루 쓰는 원리입니다.</p>
+        <p data-en="One more thing: a hand change is better done after the move is completely over. Change it midway before you are drilled and the flow breaks. When you style it, keep the upper body upright rather than folded — up and down is fine.">덧붙여, 핸드 체인지는 무브가 다 끝나고 하는 편이 좋습니다. 연습이 안 된 상태에서 중간에 바꾸면 흐름이 끊기거든요. 스타일링할 때는 상체를 접지 말고 세운 채로 — 업다운은 괜찮습니다.</p>
       </div>
     </div>
 
     <div class="item rv">
       <div class="tc">38:17</div>
       <div class="body">
-        <span class="who w-both">마무리</span>
-        <h3>“어려운 게 맞습니다”</h3>
+        <span class="who w-both" data-en="Closing">마무리</span>
+        <h3 data-en="“It is supposed to be hard”">“어려운 게 맞습니다”</h3>
         <blockquote>
-          <p>“여러분 오늘 배운 거 엄청 어려워요. 이거 어려운 게 맞아요. 계속 다음 주에 연달아서 연습할 거예요. 반복해서. 좌절하지 마시고.”</p>
-          <cite><b>경수쌤</b>수업을 닫으며</cite>
+          <p data-en="“What you learned today is extremely hard. It is supposed to be hard. We&#x27;ll keep drilling it next week, back to back. Repeatedly. So don&#x27;t get discouraged.”">“여러분 오늘 배운 거 엄청 어려워요. 이거 어려운 게 맞아요. 계속 다음 주에 연달아서 연습할 거예요. 반복해서. 좌절하지 마시고.”</p>
+          <cite data-en="&lt;b&gt;Soo&lt;/b&gt;closing the class"><b>경수쌤</b>수업을 닫으며</cite>
         </blockquote>
       </div>
     </div>
@@ -861,56 +869,56 @@ a{color:var(--gold)}
 <!-- ============ REFERENCE ============ -->
 <section id="ref">
   <div class="shead col rv">
-    <p class="eyebrow">용어</p>
-    <h2>이 수업에서 쓰인 말들</h2>
-    <p>한국어와 영어가 섞여 진행되고 자동 인식도 거칠어서, 같은 동작이 여러 이름으로 잡힌 것은 맥락을 보고 하나로 정리했습니다.</p>
+    <p class="eyebrow" data-en="Glossary">용어</p>
+    <h2 data-en="The words used in this class">이 수업에서 쓰인 말들</h2>
+    <p data-en="The class runs in a mix of Korean and English and the automatic transcript is rough, so where one move came back under several names it was settled into one by context.">한국어와 영어가 섞여 진행되고 자동 인식도 거칠어서, 같은 동작이 여러 이름으로 잡힌 것은 맥락을 보고 하나로 정리했습니다.</p>
   </div>
 
   <div class="tw rv">
     <table>
-      <thead><tr><th>용어</th><th>뜻</th><th>어디서</th></tr></thead>
+      <thead><tr><th data-en="Term">용어</th><th data-en="Meaning">뜻</th><th data-en="Where">어디서</th></tr></thead>
       <tbody>
-        <tr><td>체스트 오픈</td><td>가슴을 확장해 여는 것. 배꼽과 체스트가 멀어지며 늘어나는 상태.</td><td>모든 헤드 무브의 출발점</td></tr>
-        <tr><td>컨트랙션</td><td>오픈 직전에 살짝 수축하는 준비 동작.</td><td>7 · 8 카운트</td></tr>
-        <tr><td>틸트 턴</td><td>몸을 기울인 채 도는 턴. 녹음에서는 틸턴·팁스턴 등으로 들립니다.</td><td>1교시 기본형</td></tr>
-        <tr><td>헤드롤</td><td>머리가 무게에 따라 굴러가는 움직임.</td><td>마무리 콤비</td></tr>
-        <tr><td>로테서리</td><td>헤드의 방향축이 고정된 채 몸이 도는 무브. 별명은 “로스트 치킨”.</td><td>2교시 주제</td></tr>
-        <tr><td>리버스</td><td>팔로워가 가던 방향을 꺾어 중심 방향을 바꾸는 것.</td><td>2교시 10:50</td></tr>
-        <tr><td>일라스티시티</td><td>고무줄 탄력. 멀어지면 당기고 가까워지면 미는 힘.</td><td>1교시 26:30</td></tr>
-        <tr><td>프레임</td><td>두 사람 사이 팔과 상체의 구조. 텐션과 헤드 높이를 함께 전달합니다.</td><td>전 구간</td></tr>
+        <tr><td data-en="Chest open">체스트 오픈</td><td data-en="Expanding and opening the chest — the state where the navel and the chest lengthen away from each other.">가슴을 확장해 여는 것. 배꼽과 체스트가 멀어지며 늘어나는 상태.</td><td data-en="The start of every head move">모든 헤드 무브의 출발점</td></tr>
+        <tr><td data-en="Contraction">컨트랙션</td><td data-en="The small preparatory contraction just before the open.">오픈 직전에 살짝 수축하는 준비 동작.</td><td data-en="Counts 7 · 8">7 · 8 카운트</td></tr>
+        <tr><td data-en="Tilt turn">틸트 턴</td><td data-en="A turn taken with the body tilted. The transcript hears it as tilteon, tipseuteon and so on.">몸을 기울인 채 도는 턴. 녹음에서는 틸턴·팁스턴 등으로 들립니다.</td><td data-en="Class 1 base shape">1교시 기본형</td></tr>
+        <tr><td data-en="Head roll">헤드롤</td><td data-en="The head rolling according to its own weight.">머리가 무게에 따라 굴러가는 움직임.</td><td data-en="Closing combination">마무리 콤비</td></tr>
+        <tr><td data-en="Rotisserie">로테서리</td><td data-en="A move where the body turns while the head&#x27;s axis stays fixed. Nicknamed “roast chicken”.">헤드의 방향축이 고정된 채 몸이 도는 무브. 별명은 “로스트 치킨”.</td><td data-en="Class 2 topic">2교시 주제</td></tr>
+        <tr><td data-en="Reverse">리버스</td><td data-en="Bending the direction the follower was travelling to change the direction of the centre.">팔로워가 가던 방향을 꺾어 중심 방향을 바꾸는 것.</td><td data-en="Class 2 · 10:50">2교시 10:50</td></tr>
+        <tr><td data-en="Elasticity">일라스티시티</td><td data-en="Rubber-band spring. Move apart and it pulls; move closer and it pushes.">고무줄 탄력. 멀어지면 당기고 가까워지면 미는 힘.</td><td data-en="Class 1 · 26:30">1교시 26:30</td></tr>
+        <tr><td data-en="Frame">프레임</td><td data-en="The structure of arms and upper body held between two people. It carries tension and head height at once.">두 사람 사이 팔과 상체의 구조. 텐션과 헤드 높이를 함께 전달합니다.</td><td data-en="Throughout">전 구간</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="shead col rv">
-    <p class="eyebrow">연습표</p>
-    <h2>다음 수업까지 확인할 것</h2>
-    <p>두 분이 직접 짚어 준 항목만 옮겼습니다. 새로 만든 조언은 넣지 않았습니다.</p>
+    <p class="eyebrow" data-en="Checklist">연습표</p>
+    <h2 data-en="To check before the next class">다음 수업까지 확인할 것</h2>
+    <p data-en="Only items the two of them pointed out directly. Nothing invented has been added.">두 분이 직접 짚어 준 항목만 옮겼습니다. 새로 만든 조언은 넣지 않았습니다.</p>
   </div>
 
   <div class="checks rv">
     <div class="ck lead">
-      <p class="h"><span>LEADER</span>리더</p>
+      <p class="h" data-en="&lt;span&gt;LEADER&lt;/span&gt;Leader"><span>LEADER</span>리더</p>
       <ul>
-        <li><span class="bx"></span><span>중심 이동으로 출발시키고 있는가. 손으로 끌고 있지는 않은가</span></li>
-        <li><span class="bx"></span><span>손 높이로 체스트를 여닫는 것을 턴과 나눠서 쓰고 있는가</span></li>
-        <li><span class="bx"></span><span>7 · 8에 컨트랙션이 눈에 보이는가. 3 · 4로 서두르지 않는가</span></li>
-        <li><span class="bx"></span><span>로테서리에서 손이 수직으로 움직이는가</span></li>
-        <li><span class="bx"></span><span>출발시킨 뒤 손의 텐션을 빼 주고 있는가</span></li>
-        <li><span class="bx"></span><span>팔꿈치가 위로, 손이 수직으로 유지되는가</span></li>
-        <li><span class="bx"></span><span>마지막 순간 손가락 하나만 걸치고 공간을 내주는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I starting her with the weight shift — or dragging her by the hand?&lt;/span&gt;"><span class="bx"></span><span>중심 이동으로 출발시키고 있는가. 손으로 끌고 있지는 않은가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I using hand height to open and close the chest separately from the turn?&lt;/span&gt;"><span class="bx"></span><span>손 높이로 체스트를 여닫는 것을 턴과 나눠서 쓰고 있는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Is the contraction on 7 · 8 visible? Am I rushing to 3 · 4?&lt;/span&gt;"><span class="bx"></span><span>7 · 8에 컨트랙션이 눈에 보이는가. 3 · 4로 서두르지 않는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Does my hand move vertically in the rotisserie?&lt;/span&gt;"><span class="bx"></span><span>로테서리에서 손이 수직으로 움직이는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I releasing the tension in my hand once she has departed?&lt;/span&gt;"><span class="bx"></span><span>출발시킨 뒤 손의 텐션을 빼 주고 있는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Is my elbow up and my hand vertical?&lt;/span&gt;"><span class="bx"></span><span>팔꿈치가 위로, 손이 수직으로 유지되는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;In the last instant, am I hooking one finger and giving her room?&lt;/span&gt;"><span class="bx"></span><span>마지막 순간 손가락 하나만 걸치고 공간을 내주는가</span></li>
       </ul>
     </div>
     <div class="ck foll">
-      <p class="h"><span>FOLLOWER</span>팔로워</p>
+      <p class="h" data-en="&lt;span&gt;FOLLOWER&lt;/span&gt;Follower"><span>FOLLOWER</span>팔로워</p>
       <ul>
-        <li><span class="bx"></span><span>체중을 100%로 옮기고 있는가. 반대 발을 들 수 있는가</span></li>
-        <li><span class="bx"></span><span>헤드가 아니라 체스트가 헤드를 끌고 가는가</span></li>
-        <li><span class="bx"></span><span>틸트 턴에서 시선이 대각선 아래인가. 힐이 떨어지지 않는가</span></li>
-        <li><span class="bx"></span><span>스텝 중에는 헤드를 쓰지 않고, 끝난 뒤에 쓰는가</span></li>
-        <li><span class="bx"></span><span>헤드를 스스로 끊지 않고 다음 신호를 기다리는가</span></li>
-        <li><span class="bx"></span><span>오픈 텐션을 손가락이 아니라 등 근육으로 잡는가</span></li>
-        <li><span class="bx"></span><span>코어가 힙 위에 있는가. 스텝에서 엉덩이가 먼저 가는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I shifting my weight 100%? Could I lift the other foot?&lt;/span&gt;"><span class="bx"></span><span>체중을 100%로 옮기고 있는가. 반대 발을 들 수 있는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Is the chest carrying the head, rather than the head leading?&lt;/span&gt;"><span class="bx"></span><span>헤드가 아니라 체스트가 헤드를 끌고 가는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;In the tilt turn, is my gaze down on the diagonal? Is my heel staying down?&lt;/span&gt;"><span class="bx"></span><span>틸트 턴에서 시선이 대각선 아래인가. 힐이 떨어지지 않는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I keeping the head still during the step and using it after?&lt;/span&gt;"><span class="bx"></span><span>스텝 중에는 헤드를 쓰지 않고, 끝난 뒤에 쓰는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I waiting for the next signal instead of cutting the head myself?&lt;/span&gt;"><span class="bx"></span><span>헤드를 스스로 끊지 않고 다음 신호를 기다리는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Am I catching the open tension with my back muscles, not my fingers?&lt;/span&gt;"><span class="bx"></span><span>오픈 텐션을 손가락이 아니라 등 근육으로 잡는가</span></li>
+        <li data-en="&lt;span class=&quot;bx&quot;&gt;&lt;/span&gt;&lt;span&gt;Is my core over my hips? Do my hips go first on the step?&lt;/span&gt;"><span class="bx"></span><span>코어가 힙 위에 있는가. 스텝에서 엉덩이가 먼저 가는가</span></li>
       </ul>
     </div>
   </div>
@@ -919,12 +927,12 @@ a{color:var(--gold)}
 <footer>
   <div class="col rv">
     <p class="orn" style="margin-bottom:34px"><span>◆</span></p>
-    <h2>이 기록에 대하여</h2>
-    <p>2026년 8월 30일 <strong>Bachata All-in-One Training 첫 주차</strong>의 두 강의를 현장 녹음에서 옮긴 것입니다. 타임코드는 각 녹음 파일의 시작점 기준이고, 인용문은 경수쌤과 류지쌤의 말을 그대로 실었습니다. 두 분이 하지 않은 이야기는 넣지 않았습니다.</p>
-    <p><strong>용어 하나만 짚어 둡니다.</strong> “수직 리드”는 경수쌤이 <strong>“Vertical 리드”</strong>라고 직접 말한 그대로입니다(2교시 25:04·25:40·29:14). 반대쪽은 자동 인식이 “orgental·호기정철”처럼 알아듣지 못했는데, 같은 자리에서 <strong>“수평, 같은 레벨에서”</strong>(류지쌤)와 <strong>“두 번째 리드는 평행해야 되고”</strong>(경수쌤)라고 한국어로 말한 것이 남아 있어 <strong>수평 리드</strong>로 적었습니다. 영어 원어를 단정하지 않았습니다.</p>
-    <p>인용문은 자동 인식된 말을 그대로 두되, 잘못 잡힌 글자만 맥락에 맞게 바로잡았습니다. 두 분이 하지 않은 말은 넣지 않았고, 영어로 하신 말은 영어 그대로 실었습니다.</p>
-    <p>도입부의 영상 두 편은 같은 날 촬영본 전체입니다 — 한 편은 시범, 한 편은 수업을 정리하며 설명하는 대목입니다. 녹음 시각은 한국 시간 기준입니다.</p>
-    <p class="fine">
+    <h2 data-en="About this record">이 기록에 대하여</h2>
+    <p data-en="This is the two classes of &lt;strong&gt;week one of Bachata All-in-One Training&lt;/strong&gt;, August 30, 2026, transcribed from the room recordings. Timecodes are measured from the start of each recording, and the quotations are Soo&#x27;s and Ruji&#x27;s own words. Nothing they did not say has been added.">2026년 8월 30일 <strong>Bachata All-in-One Training 첫 주차</strong>의 두 강의를 현장 녹음에서 옮긴 것입니다. 타임코드는 각 녹음 파일의 시작점 기준이고, 인용문은 경수쌤과 류지쌤의 말을 그대로 실었습니다. 두 분이 하지 않은 이야기는 넣지 않았습니다.</p>
+    <p data-en="&lt;strong&gt;One note on terminology.&lt;/strong&gt; “Vertical lead” is exactly what Soo said — &lt;strong&gt;“Vertical 리드”&lt;/strong&gt; (class 2 · 25:04, 25:40, 29:14). The other one was not understood by the automatic transcript, which heard “orgental” and similar. But the Korean words survive in the same passage — &lt;strong&gt;“horizontal, at the same level”&lt;/strong&gt; (Ruji) and &lt;strong&gt;“the second lead has to be parallel”&lt;/strong&gt; (Soo) — so it is written here as &lt;strong&gt;horizontal lead&lt;/strong&gt;. The original English word is not asserted."><strong>용어 하나만 짚어 둡니다.</strong> “수직 리드”는 경수쌤이 <strong>“Vertical 리드”</strong>라고 직접 말한 그대로입니다(2교시 25:04·25:40·29:14). 반대쪽은 자동 인식이 “orgental·호기정철”처럼 알아듣지 못했는데, 같은 자리에서 <strong>“수평, 같은 레벨에서”</strong>(류지쌤)와 <strong>“두 번째 리드는 평행해야 되고”</strong>(경수쌤)라고 한국어로 말한 것이 남아 있어 <strong>수평 리드</strong>로 적었습니다. 영어 원어를 단정하지 않았습니다.</p>
+    <p data-en="Quotations keep the transcribed speech as it was, correcting only characters the machine misheard. Nothing the two of them did not say has been added, and what they said in English is left in English.">인용문은 자동 인식된 말을 그대로 두되, 잘못 잡힌 글자만 맥락에 맞게 바로잡았습니다. 두 분이 하지 않은 말은 넣지 않았고, 영어로 하신 말은 영어 그대로 실었습니다.</p>
+    <p data-en="The two clips at the top are the full takes filmed that day — one is a demonstration, the other is them summing up and explaining the class. Recording times are Korea time.">도입부의 영상 두 편은 같은 날 촬영본 전체입니다 — 한 편은 시범, 한 편은 수업을 정리하며 설명하는 대목입니다. 녹음 시각은 한국 시간 기준입니다.</p>
+    <p class="fine" data-en="       Class One — Head movement and partner connection · 52:41&lt;br&gt;       Class Two — Partner work leading · frame · tension control · 41:56&lt;br&gt;       BachazoukKorea Academy · Gangnam studio · recorded 2026-08-30 · written up 2026-09-04">
       Class One — 헤드 무브먼트와 파트너 커넥션 · 52:41<br>
       Class Two — 파트너 워크 리딩 · 프레임 · 텐션 컨트롤 · 41:56<br>
       BachazoukKorea Academy · 강남 연습실 · 녹음 2026-08-30 · 정리 2026-09-04
@@ -956,12 +964,41 @@ a{color:var(--gold)}
     items.forEach(function(el){io.observe(el)});
   }
 
+  var LANG='ko';
+  var T={ko:{key:['핵심만 보기','전체 보기'], lang:'ENGLISH', title:'바차주크코리아'},
+         en:{key:['Key points only','Show all'], lang:'한국어', title:'BachazoukKorea'}};
+
   var kb=document.getElementById('keyBtn');
+  var lb=document.getElementById('langBtn');
+  function keyLabel(){ if(kb) kb.textContent=T[LANG].key[document.body.classList.contains('key')?1:0]; }
   if(kb){ kb.addEventListener('click',function(){
     var on=document.body.classList.toggle('key');
     kb.setAttribute('aria-pressed',String(on));
-    kb.textContent = on ? '전체 보기' : '핵심만 보기';
+    keyLabel();
   }); }
+
+  function setLang(l){
+    LANG=l;
+    var els=document.querySelectorAll('[data-en]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      if(el.getAttribute('data-ko')===null) el.setAttribute('data-ko', el.innerHTML);
+      el.innerHTML = (l==='en') ? el.getAttribute('data-en') : el.getAttribute('data-ko');
+    }
+    var im=document.querySelectorAll('[data-en-alt]');
+    for(var j=0;j<im.length;j++){
+      var g=im[j];
+      if(g.getAttribute('data-ko-alt')===null) g.setAttribute('data-ko-alt', g.getAttribute('alt')||'');
+      g.setAttribute('alt', (l==='en') ? g.getAttribute('data-en-alt') : g.getAttribute('data-ko-alt'));
+    }
+    document.documentElement.lang=l;
+    document.title=T[l].title;
+    if(lb){ lb.textContent=T[l].lang; lb.setAttribute('lang', l==='en'?'ko':'en'); }
+    keyLabel();
+    try{ localStorage.setItem('bzk_lang', l); }catch(e){}
+  }
+  if(lb){ lb.addEventListener('click',function(){ setLang(LANG==='ko'?'en':'ko'); }); }
+  try{ if(localStorage.getItem('bzk_lang')==='en') setLang('en'); }catch(e){}
 
   var links=[].slice.call(document.querySelectorAll('nav a'));
   var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
