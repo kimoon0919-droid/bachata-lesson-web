@@ -311,9 +311,26 @@ mark.f{background:rgba(227,160,132,.19); box-shadow:inset 0 0 0 1px rgba(227,160
 #langBar button[aria-current="true"]{color:#120E08; font-weight:600; border-color:transparent;
   background:linear-gradient(160deg,#EED9A6,#C79E4C)}
 #langBar .fl{font-size:23px; line-height:1}
+nav .in,nav a,nav #keyBtn,#langBar,#langBar button,#langBar .fl{transition:
+  padding .18s ease, font-size .18s ease, margin .18s ease}
+nav.mini .in{padding:6px 24px; gap:6px}
+nav.mini a,nav.mini #keyBtn{padding:5px 12px; font-size:13.5px}
+nav.mini a .trx,nav.mini #keyBtn .trx{display:none}
+nav.mini #langBar{flex:0 1 auto; width:auto; margin:0 0 0 auto; padding:0;
+  border-top:0; gap:2px}
+nav.mini #langBar .ln{display:none}
+nav.mini #langBar button{padding:4px 8px; gap:0}
+nav.mini #langBar .fl{font-size:19px}
 @media(max-width:720px){#langBar{justify-content:center}
   #langBar button{font-size:12px; padding:5px 11px 5px 8px; gap:6px}
   #langBar .fl{font-size:20px}}
+@media(max-width:720px){
+  nav.mini .in{padding:5px 14px; gap:5px; flex-wrap:nowrap}
+  nav.mini .brand,nav.mini a{display:none}
+  nav.mini #keyBtn{padding:4px 10px; font-size:12px}
+  nav.mini #langBar{justify-content:flex-end; flex:1 1 auto; gap:1px}
+  nav.mini #langBar button{padding:4px 5px}
+  nav.mini #langBar .fl{font-size:20px}}
 #langBar button:not([aria-current="true"]) .fl{opacity:.72}
 #langBar button:hover .fl{opacity:1}
 
@@ -1083,6 +1100,10 @@ a{color:var(--gold)}
     keyLabel();
     try{ localStorage.setItem('bzk_lang', l); }catch(e){}
   }
+
+  var navEl=document.querySelector('nav');
+  function shrink(){ if(navEl) navEl.classList.toggle('mini', window.scrollY>90); }
+  window.addEventListener('scroll',shrink,{passive:true}); shrink();
 
   if(bar){ bar.addEventListener('click',function(e){
       var b=e.target.closest('button[data-lang]'); if(!b) return;
