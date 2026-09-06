@@ -1,5 +1,14 @@
-# 링크 미리보기 봇만 통과 — 검색엔진 수집은 계속 막는다
+# 링크 미리보기 봇은 통과, 검색엔진 수집은 차단
 User-agent: kakaotalk-scrap
+Allow: /
+
+User-agent: kakaotalk
+Allow: /
+
+User-agent: Kakao
+Allow: /
+
+User-agent: Daum
 Allow: /
 
 User-agent: facebookexternalhit
