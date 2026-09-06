@@ -1,2 +1,15 @@
+# 링크 미리보기 봇만 통과 — 검색엔진 수집은 계속 막는다
+User-agent: kakaotalk-scrap
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
 User-agent: *
 Disallow: /
