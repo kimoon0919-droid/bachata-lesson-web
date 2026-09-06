@@ -365,6 +365,23 @@ th .trx,td .trx{font-size:.86em; margin-top:.3em}
 .ck li .trx span{display:inline}
 .ck .h .trx{font-size:.62em; margin-top:.5em; color:#8C99A8; letter-spacing:0; font-weight:400}
 .ck .h .trx > span{display:none}
+
+/* 휴대폰: 표를 옆으로 미는 대신 한 줄씩 카드로 쌓는다 */
+@media(max-width:720px){
+  .tw{overflow-x:visible; border:0; margin-top:24px; background:transparent}
+  table{min-width:0; width:100%; display:block; background:transparent; border-collapse:separate}
+  thead{display:none}
+  tbody{display:block}
+  tr{display:block; background:var(--surface); border:1px solid var(--hair2);
+    border-radius:10px; padding:15px 16px; margin-bottom:10px}
+  td{display:block; padding:0; border:0; font-size:16.5px; line-height:1.68}
+  td:first-child{color:var(--gold); font-weight:600; font-size:17.5px; white-space:normal}
+  td + td{margin-top:8px}
+  td .mono{font-size:13.5px}
+  #ref td:last-child{margin-top:11px; font-family:var(--mono); font-size:12px;
+    letter-spacing:.06em; color:var(--ink3)}
+  #ref td:last-child .trx{font-size:1em; margin-top:.25em}
+}
 footer .fine .trx{font-size:.9em; color:#7B8794}
 body.key .body .trx,body.key .cell .trx,body.key .tbox .trx,body.key blockquote p .trx,
 body.key figcaption .trx,body.key .callout .trx,body.key td .trx{color:#4C525B}
